@@ -1,0 +1,52 @@
+{
+    "name": "omnilight/yz2-app-standard",
+    "description": "Stantard application based on Yii2 and Yz2",
+    "keywords": ["yii", "framework", "yz", "application template"],
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Pavel Agalecky",
+            "email": "pavel.agalecky@gmail.com"
+        }
+    ],
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/omnilight/yz2"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/omnilight/yz2-admin"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "dev-master",
+        "yiisoft/yii2-bootstrap": "dev-master",
+        "yiisoft/yii2-debug": "dev-master",
+        "yiisoft/yii2-gii": "dev-master",
+        "omnilight/yz2": "dev-master",
+        "omnilight/yz2-admin": "dev-master"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::setPermission"
+        ]
+    },
+    "config": {
+        "vendor-dir": "protected/vendor"
+    },
+    "extra": {
+        "writable": [
+            "backend/runtime",
+            "backend/web/assets",
+
+            "console/runtime",
+            "console/migrations",
+
+            "frontend/runtime",
+            "frontend/web/assets"
+        ]
+    }
+}
