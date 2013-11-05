@@ -7,6 +7,6 @@ use yii\base\Object;
 /**
  * Class User
  */
-class User extends User implements  {
+class User extends yz\admin\models\User {
 
-} 
+}
