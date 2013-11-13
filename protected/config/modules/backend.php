@@ -1,8 +1,11 @@
 <?php
 
 $modules = [
+    'gii' => [
+        'class' => 'yii\gii\Module',
+    ],
     'admin' => [
-        'class' => 'yz\admin\AdminModule'
+        'class' => 'yz\admin\Module'
     ]
 ];
 

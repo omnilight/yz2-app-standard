@@ -3,10 +3,12 @@
 $config = [
     'modules' => require(__DIR__ . '/modules/backend.php'),
     'user' => [
-        'identityClass' => 'app\models\backend\User',
+        'identityClass' => \app\models\backend\Users::className(),
         'enableAutoLogin' => false,
-        'loginUrl'
     ],
+    'authManager' => [
+        'class' => \yz\admin\components\AuthManager::className(),
+    ]
 ];
 
 $config = \yii\helpers\ArrayHelper::merge(
