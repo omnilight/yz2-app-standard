@@ -18,6 +18,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/omnilight/yz2-admin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/omnilight/yz2-gii"
         }
     ],
     "require": {
@@ -27,7 +31,8 @@
         "yiisoft/yii2-debug": "dev-master",
         "yiisoft/yii2-gii": "dev-master",
         "omnilight/yz2": "dev-master",
-        "omnilight/yz2-admin": "dev-master"
+        "omnilight/yz2-admin": "dev-master",
+        "omnilight/yz2-gii": "dev-master"
     },
     "scripts": {
         "post-create-project-cmd": [

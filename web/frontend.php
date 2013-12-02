@@ -1,11 +1,9 @@
 <?php
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_ENV') or define('YII_ENV', 'dev');
 
-// Checking for development mode
-if(is_file(dirname(__FILE__).'/.devenv') || getenv('YZ_APP_ENV') == 'dev') {
-    define('DEV_ENV',true);
-    defined('YII_DEBUG') or define('YII_DEBUG', true);
-    defined('YII_ENV') or define('YII_ENV', 'dev');
-}
+defined('YII_ENV') || define('YII_ENV', getenv('APP_ENV')?:'prod');
+defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 
 define('YZ_ROOT',dirname(__FILE__));
 define('YZ_APP_DIR',YZ_ROOT.'/../protected');
