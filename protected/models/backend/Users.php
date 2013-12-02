@@ -1,8 +1,8 @@
 <?php
 
 namespace app\models\backend;
-use yz\admin\models\BaseUsers;
 
+use yz\admin\models\BaseUsers;
 
 /**
  * Class BaseUsers

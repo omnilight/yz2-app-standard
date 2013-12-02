@@ -14,7 +14,10 @@ define('YZ_VENDOR_DIR',YZ_ROOT.'/../protected/vendor');
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/yii/Yii.php');
 
-$config = require(YZ_APP_DIR.'/config/web.php');
+$config = \yii\helpers\ArrayHelper::merge(
+    require(YZ_APP_DIR . '/configs/common.php'),
+    require(YZ_APP_DIR . '/configs/frontend.php')
+);
 
 $application = new yii\web\Application($config);
 $application->run();

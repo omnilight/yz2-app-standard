@@ -1,3 +1,7 @@
 .idea/
+.vagrant/
+vagrant/
+Vagrantfile
 protected/vendor/
 composer.lock
+web/.devenv
