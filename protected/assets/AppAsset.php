@@ -4,7 +4,7 @@ namespace app\config\assets;
 
 use yii\web\AssetBundle;
 
-class FrontendAsset extends AssetBundle
+class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
@@ -15,6 +15,7 @@ class FrontendAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
+        'yz\assets\YzAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }
