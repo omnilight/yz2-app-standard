@@ -13,4 +13,14 @@ $config = [
     ]
 ];
 
+if(YII_ENV_DEV) {
+    $config['modules']['gii'] = [
+        'class' => 'yii\gii\Module',
+        'allowedIPs' => ['*'],
+    ];
+
+    $config['modules']['debug'] = 'yii\debug\Module';
+    $config['preload'][] = 'debug';
+}
+
 return $config;

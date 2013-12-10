@@ -9,22 +9,26 @@ $config = [
     'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
     'modules' => require(__DIR__ . '/modules/common.php'),
     'components' => [
-        'request' => [
-            'enableCsrfValidation' => true,
-        ],
         'cache' => [
             'class' => 'yii\caching\DummyCache',
             //'class' => 'yii\caching\FileCache',
             //'class' => 'yii\caching\MemCache',
         ],
-        'user' => [
-            'identityClass' => 'app\models\User',
-        ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            // Your connection settings go there
+            'dsn' => 'mysql:host=localhost;dbname=yz2db',
+            'username' => 'yz2',
+            'password' => 'yz2',
+            'charset' => 'utf8',
+            // All tables in Yz uses format {{%tableName}} so do not remove tablePrefix property
+            'tablePrefix' => 'yz_',
+        ]
     ]
 ];
 
 if(YII_ENV_DEV) {
-    $config['preload'][] = 'debug';
+    // Put your development config here
 }
 
 return $config;

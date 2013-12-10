@@ -6,11 +6,4 @@ $modules = [
     ]
 ];
 
-if(YII_ENV_DEV) {
-    $modules['gii'] = [
-        'class' => 'yii\gii\Module',
-        'allowedIPs' => ['*'],
-    ];
-}
-
 return $modules;

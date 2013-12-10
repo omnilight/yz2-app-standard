@@ -5,9 +5,8 @@ defined('YII_ENV') or define('YII_ENV', 'dev');
 defined('YII_ENV') || define('YII_ENV', getenv('APP_ENV')?:'prod');
 defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 
-define('YZ_ROOT',dirname(__FILE__));
-define('YZ_APP_DIR',YZ_ROOT.'/../protected');
-define('YZ_VENDOR_DIR',YZ_ROOT.'/../protected/vendor');
+define('YZ_APP_DIR',__DIR__.'/../protected');
+define('YZ_VENDOR_DIR',__DIR__.'/../protected/vendor');
 
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/yii/Yii.php');

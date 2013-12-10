@@ -1,0 +1,7 @@
+<?php
+
+$modules = [
+
+];
+
+return $modules;
