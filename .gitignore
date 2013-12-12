@@ -1,5 +1,5 @@
 .idea/
 .vagrant/
-protected/vendor/
+app/vendor/
 composer.lock
 web/.devenv

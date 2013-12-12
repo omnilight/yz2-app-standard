@@ -6,12 +6,12 @@ RewriteEngine on
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-# otherwise forward it to index.php
-RewriteRule ^backend/. backend.php [L]
+# otherwise forward it to backend.php
+RewriteRule ^backend/ backend.php [L]
 
 # For frontend
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-# otherwise forward it to index.php
+# otherwise forward it to frontend.php
 RewriteRule . frontend.php [L]
