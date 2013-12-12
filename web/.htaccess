@@ -7,11 +7,11 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # otherwise forward it to index.php
-RewriteRule ^backend/. backend.php
+RewriteRule ^backend/. backend.php [L]
 
 # For frontend
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # otherwise forward it to index.php
-RewriteRule . frontend.php
+RewriteRule . frontend.php [L]

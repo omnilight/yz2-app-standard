@@ -40,7 +40,7 @@
         ]
     },
     "config": {
-        "vendor-dir": "protected/vendor"
+        "vendor-dir": "app/vendor"
     },
     "extra": {
         "writable": [

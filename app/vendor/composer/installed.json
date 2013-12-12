@@ -1,0 +1,664 @@
+[
+    {
+        "name": "phpspec/php-diff",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpspec/php-diff.git",
+            "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
+            "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
+            "shasum": ""
+        },
+        "time": "2013-11-01 13:02:21",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Diff": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Chris Boulton",
+                "homepage": "http://github.com/chrisboulton"
+            }
+        ],
+        "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays)."
+    },
+    {
+        "name": "ezyang/htmlpurifier",
+        "version": "v4.5.0",
+        "version_normalized": "4.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ezyang/htmlpurifier.git",
+            "reference": "d516e2f8de435ea78cc6152abc425d3ff2c4d289"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d516e2f8de435ea78cc6152abc425d3ff2c4d289",
+            "reference": "d516e2f8de435ea78cc6152abc425d3ff2c4d289",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2013-02-18 00:04:08",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "HTMLPurifier": "library/"
+            },
+            "files": [
+                "library/HTMLPurifier.composer.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Edward Z. Yang",
+                "email": "admin@htmlpurifier.org",
+                "homepage": "http://ezyang.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Standards compliant HTML filter written in PHP",
+        "homepage": "http://htmlpurifier.org/",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "twbs/bootstrap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "28d8be1634de80c4ddfb936b004fe9dfffd86e20"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/28d8be1634de80c4ddfb936b004fe9dfffd86e20",
+            "reference": "28d8be1634de80c4ddfb936b004fe9dfffd86e20",
+            "shasum": ""
+        },
+        "time": "2013-12-10 00:20:26",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Jacob Thornton",
+                "email": "jacobthornton@gmail.com"
+            },
+            {
+                "name": "Mark Otto",
+                "email": "markdotto@gmail.com"
+            }
+        ],
+        "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+        "homepage": "http://getbootstrap.com",
+        "keywords": [
+            "bootstrap",
+            "css"
+        ]
+    },
+    {
+        "name": "yiisoft/jquery",
+        "version": "1.10.2",
+        "version_normalized": "1.10.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/jquery.git",
+            "reference": "52b005d9ffb9b1900d05f76960798402b8b40f91"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/jquery/zipball/52b005d9ffb9b1900d05f76960798402b8b40f91",
+            "reference": "52b005d9ffb9b1900d05f76960798402b8b40f91",
+            "shasum": ""
+        },
+        "time": "2013-11-06 00:14:38",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
+        "name": "omnilight/yz2-gii",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/gii",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-gii.git",
+            "reference": "f5c019f5185dae2f2e819f47c8b4c2627e5c42b2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/f5c019f5185dae2f2e819f47c8b4c2627e5c42b2",
+            "reference": "f5c019f5185dae2f2e819f47c8b4c2627e5c42b2",
+            "shasum": ""
+        },
+        "require": {
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-02 18:52:52",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\gii\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz Gii extension",
+        "keywords": [
+            "framework",
+            "gii",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-gii/tree/master",
+            "issues": "https://github.com/omnilight/yz2-gii/issues"
+        }
+    },
+    {
+        "name": "michelf/php-markdown",
+        "version": "1.3",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/michelf/php-markdown.git",
+            "reference": "fcdd3e0781ae40c2b9847874e0755ff4f5559688"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/michelf/php-markdown/zipball/fcdd3e0781ae40c2b9847874e0755ff4f5559688",
+            "reference": "fcdd3e0781ae40c2b9847874e0755ff4f5559688",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-04-11 18:53:11",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-lib": "1.3.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Michelf": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michel Fortin",
+                "email": "michel.fortin@michelf.ca",
+                "homepage": "http://michelf.ca/",
+                "role": "Developer"
+            },
+            {
+                "name": "John Gruber",
+                "homepage": "http://daringfireball.net/"
+            }
+        ],
+        "description": "PHP Markdown",
+        "homepage": "http://michelf.ca/projects/php-markdown/",
+        "keywords": [
+            "markdown"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-composer",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/composer",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-composer.git",
+            "reference": "28ca3b8e2e92764b1abd07695e8d6f092685f5e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/28ca3b8e2e92764b1abd07695e8d6f092685f5e9",
+            "reference": "28ca3b8e2e92764b1abd07695e8d6f092685f5e9",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "1.0.0"
+        },
+        "time": "2013-12-10 04:51:49",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "yii\\composer\\Plugin"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\composer\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The composer plugin for Yii extension installer",
+        "keywords": [
+            "composer",
+            "extension installer",
+            "yii"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-debug",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/debug",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-debug.git",
+            "reference": "a8995a1357d437bdcc713e891cf2058e6cb5d132"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/a8995a1357d437bdcc713e891cf2058e6cb5d132",
+            "reference": "a8995a1357d437bdcc713e891cf2058e6cb5d132",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2013-12-10 04:51:49",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\debug\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The debugger extension for the Yii framework",
+        "keywords": [
+            "debug",
+            "debugger",
+            "yii"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-bootstrap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/bootstrap",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+            "reference": "3143f11c43cbe77a12aac7b60d16d3283b87c14a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3143f11c43cbe77a12aac7b60d16d3283b87c14a",
+            "reference": "3143f11c43cbe77a12aac7b60d16d3283b87c14a",
+            "shasum": ""
+        },
+        "require": {
+            "twbs/bootstrap": "3.0.*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2013-12-10 04:51:49",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\bootstrap\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The Twitter Bootstrap extension for the Yii framework",
+        "keywords": [
+            "bootstrap",
+            "yii"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-gii",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/gii",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-gii.git",
+            "reference": "0fe25a483409c60ae900d5e921d19340b58c1c2e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/0fe25a483409c60ae900d5e921d19340b58c1c2e",
+            "reference": "0fe25a483409c60ae900d5e921d19340b58c1c2e",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2013-12-10 04:51:49",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\gii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The Gii extension for the Yii framework",
+        "keywords": [
+            "code generator",
+            "gii",
+            "yii"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "e53ca14a8def7e9e7bfd61ab68d4b995c67b44a2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/e53ca14a8def7e9e7bfd61ab68d4b995c67b44a2",
+            "reference": "e53ca14a8def7e9e7bfd61ab68d4b995c67b44a2",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "ezyang/htmlpurifier": "4.5.*",
+            "lib-pcre": "*",
+            "michelf/php-markdown": "1.3.*",
+            "php": ">=5.4.0",
+            "phpspec/php-diff": ">=1.0.2",
+            "yiisoft/jquery": "1.10.*",
+            "yiisoft/yii2-composer": "*"
+        },
+        "time": "2013-12-10 04:11:56",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            },
+            {
+                "name": "Alexander Makarov",
+                "email": "sam@rmcreative.ru",
+                "homepage": "http://rmcreative.ru/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Maurizio Domba",
+                "homepage": "http://mdomba.info/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Timur Ruziev",
+                "email": "resurtm@gmail.com",
+                "homepage": "http://resurtm.com/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Yii PHP Framework Version 2",
+        "homepage": "http://www.yiiframework.com/",
+        "keywords": [
+            "framework",
+            "yii"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-widgets",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "kartik",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widgets.git",
+            "reference": "d1044ed533a1a78afe156d9b8777971baf405095"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/d1044ed533a1a78afe156d9b8777971baf405095",
+            "reference": "d1044ed533a1a78afe156d9b8777971baf405095",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "dev-master"
+        },
+        "time": "2013-12-09 17:50:27",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "kartik\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD 3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
+        "homepage": "https://github.com/kartik-v/yii2-widgets",
+        "keywords": [
+            "extension",
+            "form",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "omnilight/yz2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2.git",
+            "reference": "a32c46e19fb4cb727b59a27ca21faccda1625670"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2/zipball/a32c46e19fb4cb727b59a27ca21faccda1625670",
+            "reference": "a32c46e19fb4cb727b59a27ca21faccda1625670",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master"
+        },
+        "time": "2013-12-10 09:02:51",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz2 extension for Yii2 framework adds ability to build Yii2 application very fast and confortable",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2/tree/master",
+            "issues": "https://github.com/omnilight/yz2/issues"
+        }
+    },
+    {
+        "name": "omnilight/yz2-admin",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/admin",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-admin.git",
+            "reference": "b5e8e911561a5d1700a1cbda55872478b2d24b11"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/b5e8e911561a5d1700a1cbda55872478b2d24b11",
+            "reference": "b5e8e911561a5d1700a1cbda55872478b2d24b11",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-widgets": "dev-master",
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-10 09:02:50",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\admin\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Module for managing administration panel",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-admin/tree/master",
+            "issues": "https://github.com/omnilight/yz2-admin/issues"
+        }
+    }
+]
