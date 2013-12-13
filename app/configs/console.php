@@ -10,6 +10,9 @@ return \yii\helpers\ArrayHelper::merge(
         'controllerPath' => dirname(__DIR__) . '/commands',
         'controllerNamespace' => 'app\commands',
         'modules' => require(__DIR__ . '/modules/console.php'),
+        'params' => [
+
+        ],
     ],
     YII_ENV_DEV? [
 

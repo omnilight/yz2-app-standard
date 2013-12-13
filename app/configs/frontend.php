@@ -6,8 +6,8 @@ return \yii\helpers\ArrayHelper::merge(
         'modules' => require(__DIR__ . '/modules/frontend.php'),
         'components' => [
             'urlManager' => [
-                'enablePrettyUrl' => true,
-                'showScriptName' => false,
+                // Yz UrlManager by default uses pretty urls and script name
+                'class' => '\yz\components\UrlManager',
                 'rules' => [
 
                 ],
@@ -16,12 +16,12 @@ return \yii\helpers\ArrayHelper::merge(
                 'enableCsrfValidation' => true,
             ],
             'user' => [
-                'identityClass' => 'app\models\User',
+                'identityClass' => '\app\models\User',
             ],
         ],
-        'on '.\yii\base\Application::EVENT_BEFORE_REQUEST => function() {
-                \yz\UrlCollector::collect();
-            },
+        'params' => [
+
+        ],
     ],
     YII_ENV_DEV? [
         'modules' => [

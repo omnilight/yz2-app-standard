@@ -6,8 +6,8 @@ return \yii\helpers\ArrayHelper::merge(
         'modules' => require(__DIR__ . '/modules/backend.php'),
         'components' => [
             'urlManager' => [
-                'enablePrettyUrl' => true,
-                'showScriptName' => false,
+                // Yz UrlManager by default uses pretty urls and script name
+                'class' => '\yz\components\UrlManager',
                 'rules' => [
 
                 ],
@@ -20,9 +20,9 @@ return \yii\helpers\ArrayHelper::merge(
                 'class' => '\yz\admin\components\AuthManager',
             ]
         ],
-        'on '.\yii\base\Application::EVENT_BEFORE_REQUEST =>  function() {
-                \yz\helpers\UrlCollector::collect();
-            },
+        'params' => [
+
+        ],
     ],
     YII_ENV_DEV? [
         'modules' => [

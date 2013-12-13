@@ -24,8 +24,20 @@ return \yii\helpers\ArrayHelper::merge(
                 'charset' => 'utf8',
                 // All tables in Yz uses format {{%tableName}} so do not remove tablePrefix property
                 'tablePrefix' => 'yz_',
-            ]
-        ]
+            ],
+            'log' => [
+                'traceLevel' => YII_DEBUG ? 3 : 0,
+                'targets' => [
+                    [
+                        'class' => 'yii\log\FileTarget',
+                        'levels' => ['error', 'warning', 'trace'],
+                    ],
+                ],
+            ],
+        ],
+        'params' => [
+            'application-type' => YZ_APP_TYPE,
+        ],
     ],
     YII_ENV_DEV? [
 
