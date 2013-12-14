@@ -17,7 +17,7 @@ define('YZ_APP_TYPE_CONSOLE', YZ_APP_TYPE == 'console');
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/yii/Yii.php');
 
-$config = require YZ_APP_DIR . '/configs/frontend.php';
+$config = require YZ_APP_DIR . '/configs/console.php';
 
 $application = new yii\console\Application($config);
 $exitCode = $application->run();
