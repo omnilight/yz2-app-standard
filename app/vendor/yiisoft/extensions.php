@@ -39,6 +39,15 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii/yii/gii',
     ),
   ),
+  'omnilight/yz2-admin' => 
+  array (
+    'name' => 'omnilight/yz2-admin',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yz/admin' => $vendorDir . '/omnilight/yz2-admin/yz/admin',
+    ),
+  ),
   'kartik-v/yii2-widgets' => 
   array (
     'name' => 'kartik-v/yii2-widgets',
@@ -55,15 +64,6 @@ return array (
     'alias' => 
     array (
       '@yz' => $vendorDir . '/omnilight/yz2/yz',
-    ),
-  ),
-  'omnilight/yz2-admin' => 
-  array (
-    'name' => 'omnilight/yz2-admin',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@yz/admin' => $vendorDir . '/omnilight/yz2-admin/yz/admin',
     ),
   ),
 );
