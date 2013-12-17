@@ -88,15 +88,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "9966d035cd35c510369286cbb645340bdd6ffc95"
+            "reference": "168469f545a189fa51e5d36546e7972f4748ec3f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/9966d035cd35c510369286cbb645340bdd6ffc95",
-            "reference": "9966d035cd35c510369286cbb645340bdd6ffc95",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/168469f545a189fa51e5d36546e7972f4748ec3f",
+            "reference": "168469f545a189fa51e5d36546e7972f4748ec3f",
             "shasum": ""
         },
-        "time": "2013-12-11 18:52:55",
+        "time": "2013-12-15 05:50:47",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -441,18 +441,161 @@
         ]
     },
     {
+        "name": "omnilight/yz2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2.git",
+            "reference": "a71e4fa5d2b1550bfd696318d808c4ff3935683f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2/zipball/a71e4fa5d2b1550bfd696318d808c4ff3935683f",
+            "reference": "a71e4fa5d2b1550bfd696318d808c4ff3935683f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master"
+        },
+        "time": "2013-12-14 13:25:54",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz2 extension for Yii2 framework adds ability to build Yii2 application very fast and confortable",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2/tree/master",
+            "issues": "https://github.com/omnilight/yz2/issues"
+        }
+    },
+    {
+        "name": "omnilight/yz2-admin",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/admin",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-admin.git",
+            "reference": "f5a25bbd470cf31445439d03db79dde7fdd82500"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/f5a25bbd470cf31445439d03db79dde7fdd82500",
+            "reference": "f5a25bbd470cf31445439d03db79dde7fdd82500",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-widgets": "dev-master",
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-14 19:14:20",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\admin\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Module for managing administration panel",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-admin/tree/master",
+            "issues": "https://github.com/omnilight/yz2-admin/issues"
+        }
+    },
+    {
+        "name": "kartik-v/yii2-widgets",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "kartik",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widgets.git",
+            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/723e7dc28e32058d4d9dfd209c984d5e48345201",
+            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-15 10:24:32",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "kartik\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD 3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
+        "homepage": "https://github.com/kartik-v/yii2-widgets",
+        "keywords": [
+            "extension",
+            "form",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
         "name": "yiisoft/yii2",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "5fb63f7b5389c25029d6114694341b11c99ebbe3"
+            "reference": "f5814dfe7be57dccd0b01c8aef47463cece2ed8b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5fb63f7b5389c25029d6114694341b11c99ebbe3",
-            "reference": "5fb63f7b5389c25029d6114694341b11c99ebbe3",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f5814dfe7be57dccd0b01c8aef47463cece2ed8b",
+            "reference": "f5814dfe7be57dccd0b01c8aef47463cece2ed8b",
             "shasum": ""
         },
         "require": {
@@ -465,7 +608,7 @@
             "yiisoft/jquery": "1.10.*",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2013-12-12 11:07:28",
+        "time": "2013-12-14 23:53:25",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -519,147 +662,5 @@
             "framework",
             "yii"
         ]
-    },
-    {
-        "name": "kartik-v/yii2-widgets",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "kartik",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-widgets.git",
-            "reference": "1b8515a8acf36b5a57fbca12092d30eeed530e7f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/1b8515a8acf36b5a57fbca12092d30eeed530e7f",
-            "reference": "1b8515a8acf36b5a57fbca12092d30eeed530e7f",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "dev-master"
-        },
-        "time": "2013-12-12 02:05:29",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "kartik\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD 3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
-        "homepage": "https://github.com/kartik-v/yii2-widgets",
-        "keywords": [
-            "extension",
-            "form",
-            "widget",
-            "yii2"
-        ]
-    },
-    {
-        "name": "omnilight/yz2",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2.git",
-            "reference": "e1f2289e6ef5c0134557e93ce5b434b8f4e2952b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2/zipball/e1f2289e6ef5c0134557e93ce5b434b8f4e2952b",
-            "reference": "e1f2289e6ef5c0134557e93ce5b434b8f4e2952b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master"
-        },
-        "time": "2013-12-12 12:35:54",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Yz2 extension for Yii2 framework adds ability to build Yii2 application very fast and confortable",
-        "keywords": [
-            "administation panel",
-            "framework",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2/tree/master",
-            "issues": "https://github.com/omnilight/yz2/issues"
-        }
-    },
-    {
-        "name": "omnilight/yz2-admin",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz/admin",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "546f1a6e7618d790ea912d1c3e96456c20f22250"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/546f1a6e7618d790ea912d1c3e96456c20f22250",
-            "reference": "546f1a6e7618d790ea912d1c3e96456c20f22250",
-            "shasum": ""
-        },
-        "require": {
-            "kartik-v/yii2-widgets": "dev-master",
-            "omnilight/yz2": "dev-master",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-10 11:33:00",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\admin\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Module for managing administration panel",
-        "keywords": [
-            "administation panel",
-            "framework",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2-admin/tree/master",
-            "issues": "https://github.com/omnilight/yz2-admin/issues"
-        }
     }
 ]
