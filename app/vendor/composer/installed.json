@@ -88,15 +88,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "168469f545a189fa51e5d36546e7972f4748ec3f"
+            "reference": "94635eb9723444ad69b00d33c96e129c1996b013"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/168469f545a189fa51e5d36546e7972f4748ec3f",
-            "reference": "168469f545a189fa51e5d36546e7972f4748ec3f",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/94635eb9723444ad69b00d33c96e129c1996b013",
+            "reference": "94635eb9723444ad69b00d33c96e129c1996b013",
             "shasum": ""
         },
-        "time": "2013-12-15 05:50:47",
+        "time": "2013-12-16 08:43:21",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -149,54 +149,6 @@
         ],
         "description": "jQuery JavaScript Library",
         "homepage": "http://jquery.com"
-    },
-    {
-        "name": "omnilight/yz2-gii",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz/gii",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2-gii.git",
-            "reference": "f5c019f5185dae2f2e819f47c8b4c2627e5c42b2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/f5c019f5185dae2f2e819f47c8b4c2627e5c42b2",
-            "reference": "f5c019f5185dae2f2e819f47c8b4c2627e5c42b2",
-            "shasum": ""
-        },
-        "require": {
-            "omnilight/yz2": "dev-master",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-02 18:52:52",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\gii\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Yz Gii extension",
-        "keywords": [
-            "framework",
-            "gii",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2-gii/tree/master",
-            "issues": "https://github.com/omnilight/yz2-gii/issues"
-        }
     },
     {
         "name": "michelf/php-markdown",
@@ -348,52 +300,6 @@
         ]
     },
     {
-        "name": "yiisoft/yii2-bootstrap",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yii/bootstrap",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-            "reference": "3408349cf3bc7c68fad34a5c5de42d576fc85b5e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3408349cf3bc7c68fad34a5c5de42d576fc85b5e",
-            "reference": "3408349cf3bc7c68fad34a5c5de42d576fc85b5e",
-            "shasum": ""
-        },
-        "require": {
-            "twbs/bootstrap": "3.0.*",
-            "yiisoft/yii2": "*"
-        },
-        "time": "2013-12-11 17:04:58",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yii\\bootstrap\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/",
-                "role": "Founder and project lead"
-            }
-        ],
-        "description": "The Twitter Bootstrap extension for the Yii framework",
-        "keywords": [
-            "bootstrap",
-            "yii"
-        ]
-    },
-    {
         "name": "yiisoft/yii2-gii",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -439,101 +345,6 @@
             "gii",
             "yii"
         ]
-    },
-    {
-        "name": "omnilight/yz2",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2.git",
-            "reference": "a71e4fa5d2b1550bfd696318d808c4ff3935683f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2/zipball/a71e4fa5d2b1550bfd696318d808c4ff3935683f",
-            "reference": "a71e4fa5d2b1550bfd696318d808c4ff3935683f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master"
-        },
-        "time": "2013-12-14 13:25:54",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Yz2 extension for Yii2 framework adds ability to build Yii2 application very fast and confortable",
-        "keywords": [
-            "administation panel",
-            "framework",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2/tree/master",
-            "issues": "https://github.com/omnilight/yz2/issues"
-        }
-    },
-    {
-        "name": "omnilight/yz2-admin",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz/admin",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "f5a25bbd470cf31445439d03db79dde7fdd82500"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/f5a25bbd470cf31445439d03db79dde7fdd82500",
-            "reference": "f5a25bbd470cf31445439d03db79dde7fdd82500",
-            "shasum": ""
-        },
-        "require": {
-            "kartik-v/yii2-widgets": "dev-master",
-            "omnilight/yz2": "dev-master",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-14 19:14:20",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\admin\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Module for managing administration panel",
-        "keywords": [
-            "administation panel",
-            "framework",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2-admin/tree/master",
-            "issues": "https://github.com/omnilight/yz2-admin/issues"
-        }
     },
     {
         "name": "kartik-v/yii2-widgets",
@@ -584,18 +395,216 @@
         ]
     },
     {
+        "name": "omnilight/yz2-gii",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/gii",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-gii.git",
+            "reference": "6c623d715c8a759f64a8ed852bd2ccb0b26471cd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/6c623d715c8a759f64a8ed852bd2ccb0b26471cd",
+            "reference": "6c623d715c8a759f64a8ed852bd2ccb0b26471cd",
+            "shasum": ""
+        },
+        "require": {
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-17 10:08:43",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "yz\\admin\\Extension"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\gii\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz Gii extension",
+        "keywords": [
+            "framework",
+            "gii",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-gii/tree/master",
+            "issues": "https://github.com/omnilight/yz2-gii/issues"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-bootstrap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/bootstrap",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+            "reference": "23a532230b1ffacb55d61ba85156cfc8a237dc53"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/23a532230b1ffacb55d61ba85156cfc8a237dc53",
+            "reference": "23a532230b1ffacb55d61ba85156cfc8a237dc53",
+            "shasum": ""
+        },
+        "require": {
+            "twbs/bootstrap": "3.0.*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2013-12-17 09:45:49",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\bootstrap\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The Twitter Bootstrap extension for the Yii framework",
+        "keywords": [
+            "bootstrap",
+            "yii"
+        ]
+    },
+    {
+        "name": "omnilight/yz2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2.git",
+            "reference": "57c8b1f12e3c0627eef7ddc4a84a64912f486e7b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2/zipball/57c8b1f12e3c0627eef7ddc4a84a64912f486e7b",
+            "reference": "57c8b1f12e3c0627eef7ddc4a84a64912f486e7b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master"
+        },
+        "time": "2013-12-17 10:08:43",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "yz\\admin\\Extension"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz2 extension for Yii2 framework adds ability to build Yii2 application very fast and confortable",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2/tree/master",
+            "issues": "https://github.com/omnilight/yz2/issues"
+        }
+    },
+    {
+        "name": "omnilight/yz2-admin",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/admin",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-admin.git",
+            "reference": "0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1",
+            "reference": "0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-widgets": "dev-master",
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-17 10:08:43",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "yz\\admin\\Extension"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\admin\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Module for managing administration panel",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-admin/tree/master",
+            "issues": "https://github.com/omnilight/yz2-admin/issues"
+        }
+    },
+    {
         "name": "yiisoft/yii2",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "f5814dfe7be57dccd0b01c8aef47463cece2ed8b"
+            "reference": "9f930696ac9fab04b8c8b57ee91b1729a80a3a47"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f5814dfe7be57dccd0b01c8aef47463cece2ed8b",
-            "reference": "f5814dfe7be57dccd0b01c8aef47463cece2ed8b",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/9f930696ac9fab04b8c8b57ee91b1729a80a3a47",
+            "reference": "9f930696ac9fab04b8c8b57ee91b1729a80a3a47",
             "shasum": ""
         },
         "require": {
@@ -608,7 +617,7 @@
             "yiisoft/jquery": "1.10.*",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2013-12-14 23:53:25",
+        "time": "2013-12-17 02:47:15",
         "type": "library",
         "installation-source": "source",
         "autoload": {

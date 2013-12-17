@@ -17,6 +17,7 @@ return \yii\helpers\ArrayHelper::merge(
             'user' => [
                 'identityClass' => '\yz\admin\models\Users',
                 'enableAutoLogin' => false,
+				'loginUrl' => ['admin/main/login']
             ],
             'authManager' => [
                 'class' => '\yz\admin\components\AuthManager',
