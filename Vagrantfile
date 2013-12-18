@@ -7,7 +7,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :path => "carcass/vagrant/setup-app.sh"
 
   config.vm.network "forwarded_port", guest: 80, host: 8880 # frontend
-  # config.vm.network "forwarded_port", guest: 81, host: 8881 # backend
 
   config.vm.provider :virtualbox do |virtualbox|
       virtualbox.customize ["modifyvm", :id, "--name", "yz2-app-standard"]

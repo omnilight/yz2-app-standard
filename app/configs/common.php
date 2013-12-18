@@ -5,6 +5,10 @@ Yii::setAlias('@app',YZ_APP_DIR);
 return \yii\helpers\ArrayHelper::merge(
     [
         'id' => 'yz2-app-standard',
+
+		'language' => 'ru',
+		'sourceLanguage' => 'en-US',
+
         'basePath' => dirname(__DIR__),
         'preload' => [],
         'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),

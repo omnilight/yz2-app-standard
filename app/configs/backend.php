@@ -15,7 +15,7 @@ return \yii\helpers\ArrayHelper::merge(
                 ],
             ],
             'user' => [
-                'identityClass' => '\yz\admin\models\Users',
+                'identityClass' => '\yz\admin\models\User',
                 'enableAutoLogin' => false,
 				'loginUrl' => ['admin/main/login']
             ],
@@ -32,8 +32,14 @@ return \yii\helpers\ArrayHelper::merge(
             'gii' => [
                 'class' => 'yii\gii\Module',
                 'allowedIPs' => ['*'],
+				'generators' => [
+					'yz-model' => ['class' => 'yz\gii\generators\model\Generator'],
+				],
             ],
-            'debug' => 'yii\debug\Module',
+            'debug' => [
+				'class' => 'yii\debug\Module',
+				'allowedIPs' => ['*'],
+			],
         ],
         'preload' => ['debug'],
     ] : []
