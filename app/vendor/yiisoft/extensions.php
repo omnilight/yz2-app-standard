@@ -30,16 +30,6 @@ return array (
       '@kartik' => $vendorDir . '/kartik-v/yii2-widgets/kartik',
     ),
   ),
-  'omnilight/yz2-gii' => 
-  array (
-    'name' => 'omnilight/yz2-gii',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@yz/gii' => $vendorDir . '/omnilight/yz2-gii/yz/gii',
-    ),
-    'bootstrap' => 'yz\\admin\\Extension',
-  ),
   'yiisoft/yii2-bootstrap' => 
   array (
     'name' => 'yiisoft/yii2-bootstrap',
@@ -56,6 +46,16 @@ return array (
     'alias' => 
     array (
       '@yz' => $vendorDir . '/omnilight/yz2/yz',
+    ),
+    'bootstrap' => 'yz\\admin\\Extension',
+  ),
+  'omnilight/yz2-gii' => 
+  array (
+    'name' => 'omnilight/yz2-gii',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yz/gii' => $vendorDir . '/omnilight/yz2-gii/yz/gii',
     ),
     'bootstrap' => 'yz\\admin\\Extension',
   ),

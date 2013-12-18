@@ -347,57 +347,6 @@
         ]
     },
     {
-        "name": "omnilight/yz2-gii",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz/gii",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2-gii.git",
-            "reference": "6c623d715c8a759f64a8ed852bd2ccb0b26471cd"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/6c623d715c8a759f64a8ed852bd2ccb0b26471cd",
-            "reference": "6c623d715c8a759f64a8ed852bd2ccb0b26471cd",
-            "shasum": ""
-        },
-        "require": {
-            "omnilight/yz2": "dev-master",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-17 10:08:43",
-        "type": "yii2-extension",
-        "extra": {
-            "bootstrap": "yz\\admin\\Extension"
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\gii\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Yz Gii extension",
-        "keywords": [
-            "framework",
-            "gii",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2-gii/tree/master",
-            "issues": "https://github.com/omnilight/yz2-gii/issues"
-        }
-    },
-    {
         "name": "yiisoft/yii2-bootstrap",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -441,54 +390,6 @@
         "keywords": [
             "bootstrap",
             "yii"
-        ]
-    },
-    {
-        "name": "kartik-v/yii2-widgets",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "kartik",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-widgets.git",
-            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/723e7dc28e32058d4d9dfd209c984d5e48345201",
-            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-15 10:24:32",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "kartik\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD 3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
-        "homepage": "https://github.com/kartik-v/yii2-widgets",
-        "keywords": [
-            "extension",
-            "form",
-            "widget",
-            "yii2"
         ]
     },
     {
@@ -541,6 +442,57 @@
         }
     },
     {
+        "name": "omnilight/yz2-gii",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/gii",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-gii.git",
+            "reference": "fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb",
+            "reference": "fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb",
+            "shasum": ""
+        },
+        "require": {
+            "omnilight/yz2": "dev-master",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-18 15:58:54",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "yz\\admin\\Extension"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\gii\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yz Gii extension",
+        "keywords": [
+            "framework",
+            "gii",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-gii/tree/master",
+            "issues": "https://github.com/omnilight/yz2-gii/issues"
+        }
+    },
+    {
         "name": "omnilight/yz2-admin",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -548,22 +500,22 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "15f5f07e14ad9e8760bbc43827972b5ce95e5f50"
+            "reference": "3152c205c2c1357ffa11fb99b624870ae2abde6a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/15f5f07e14ad9e8760bbc43827972b5ce95e5f50",
-            "reference": "15f5f07e14ad9e8760bbc43827972b5ce95e5f50",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/3152c205c2c1357ffa11fb99b624870ae2abde6a",
+            "reference": "3152c205c2c1357ffa11fb99b624870ae2abde6a",
             "shasum": ""
         },
         "require": {
-            "kartik-v/yii2-widgets": "dev-master",
+            "fortawesome/font-awesome": "v4.0.3",
             "omnilight/yz2": "dev-master",
             "php": ">=5.4.0",
             "yiisoft/yii2": "dev-master",
             "yiisoft/yii2-bootstrap": "dev-master"
         },
-        "time": "2013-12-17 10:57:39",
+        "time": "2013-12-18 16:04:19",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -599,12 +551,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6"
+            "reference": "eb0b9129e609a52a2388966c2dbc1eba7effdcba"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6",
-            "reference": "7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/eb0b9129e609a52a2388966c2dbc1eba7effdcba",
+            "reference": "eb0b9129e609a52a2388966c2dbc1eba7effdcba",
             "shasum": ""
         },
         "require": {
@@ -617,7 +569,7 @@
             "yiisoft/jquery": "1.10.*",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2013-12-18 15:33:20",
+        "time": "2013-12-18 16:22:56",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -670,6 +622,56 @@
         "keywords": [
             "framework",
             "yii"
+        ]
+    },
+    {
+        "name": "fortawesome/font-awesome",
+        "version": "v4.0.3",
+        "version_normalized": "4.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+            "shasum": ""
+        },
+        "require-dev": {
+            "jekyll": "1.0.2",
+            "lessc": "1.4.2"
+        },
+        "time": "2013-11-05 12:35:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OFL-1.1",
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Gandy",
+                "email": "dave@fontawesome.io",
+                "homepage": "http://twitter.com/davegandy",
+                "role": "Developer"
+            }
+        ],
+        "description": "The iconic font designed for Bootstrap",
+        "homepage": "http://fontawesome.io/",
+        "keywords": [
+            "FontAwesome",
+            "awesome",
+            "bootstrap",
+            "font",
+            "icon"
         ]
     }
 ]
