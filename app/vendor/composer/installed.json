@@ -88,15 +88,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "94635eb9723444ad69b00d33c96e129c1996b013"
+            "reference": "91fdd891000b1110c7585aab1156a3edea718567"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/94635eb9723444ad69b00d33c96e129c1996b013",
-            "reference": "94635eb9723444ad69b00d33c96e129c1996b013",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/91fdd891000b1110c7585aab1156a3edea718567",
+            "reference": "91fdd891000b1110c7585aab1156a3edea718567",
             "shasum": ""
         },
-        "time": "2013-12-16 08:43:21",
+        "time": "2013-12-18 06:49:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -347,54 +347,6 @@
         ]
     },
     {
-        "name": "kartik-v/yii2-widgets",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "kartik",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-widgets.git",
-            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/723e7dc28e32058d4d9dfd209c984d5e48345201",
-            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-15 10:24:32",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "kartik\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD 3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
-        "homepage": "https://github.com/kartik-v/yii2-widgets",
-        "keywords": [
-            "extension",
-            "form",
-            "widget",
-            "yii2"
-        ]
-    },
-    {
         "name": "omnilight/yz2-gii",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -492,6 +444,54 @@
         ]
     },
     {
+        "name": "kartik-v/yii2-widgets",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "kartik",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widgets.git",
+            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/723e7dc28e32058d4d9dfd209c984d5e48345201",
+            "reference": "723e7dc28e32058d4d9dfd209c984d5e48345201",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-15 10:24:32",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "kartik\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD 3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Twitter Bootstrap",
+        "homepage": "https://github.com/kartik-v/yii2-widgets",
+        "keywords": [
+            "extension",
+            "form",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
         "name": "omnilight/yz2",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -499,19 +499,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2.git",
-            "reference": "57c8b1f12e3c0627eef7ddc4a84a64912f486e7b"
+            "reference": "3bad8de5dee203a4462e44e07e4db86718428eef"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2/zipball/57c8b1f12e3c0627eef7ddc4a84a64912f486e7b",
-            "reference": "57c8b1f12e3c0627eef7ddc4a84a64912f486e7b",
+            "url": "https://api.github.com/repos/omnilight/yz2/zipball/3bad8de5dee203a4462e44e07e4db86718428eef",
+            "reference": "3bad8de5dee203a4462e44e07e4db86718428eef",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4.0",
             "yiisoft/yii2": "dev-master"
         },
-        "time": "2013-12-17 10:08:43",
+        "time": "2013-12-17 10:57:39",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -548,12 +548,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1"
+            "reference": "15f5f07e14ad9e8760bbc43827972b5ce95e5f50"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1",
-            "reference": "0a23221c1aa2c45adbf34aff58d5a90cfe70dcf1",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/15f5f07e14ad9e8760bbc43827972b5ce95e5f50",
+            "reference": "15f5f07e14ad9e8760bbc43827972b5ce95e5f50",
             "shasum": ""
         },
         "require": {
@@ -563,7 +563,7 @@
             "yiisoft/yii2": "dev-master",
             "yiisoft/yii2-bootstrap": "dev-master"
         },
-        "time": "2013-12-17 10:08:43",
+        "time": "2013-12-17 10:57:39",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -599,12 +599,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "9f930696ac9fab04b8c8b57ee91b1729a80a3a47"
+            "reference": "7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/9f930696ac9fab04b8c8b57ee91b1729a80a3a47",
-            "reference": "9f930696ac9fab04b8c8b57ee91b1729a80a3a47",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6",
+            "reference": "7bd329853c2cdeae72e2e54a86fbcf2c368d7ef6",
             "shasum": ""
         },
         "require": {
@@ -617,7 +617,7 @@
             "yiisoft/jquery": "1.10.*",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2013-12-17 02:47:15",
+        "time": "2013-12-18 15:33:20",
         "type": "library",
         "installation-source": "source",
         "autoload": {
