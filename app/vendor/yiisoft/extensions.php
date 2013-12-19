@@ -30,15 +30,6 @@ return array (
       '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/yii/bootstrap',
     ),
   ),
-  'omnilight/icons' => 
-  array (
-    'name' => 'omnilight/icons',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@omnilight/icons' => $vendorDir . '/omnilight/icons/omnilight/icons',
-    ),
-  ),
   'yiisoft/yii2-debug' => 
   array (
     'name' => 'yiisoft/yii2-debug',
@@ -77,5 +68,14 @@ return array (
       '@yz/admin' => $vendorDir . '/omnilight/yz2-admin/yz/admin',
     ),
     'bootstrap' => 'yz\\admin\\Extension',
+  ),
+  'omnilight/icons' => 
+  array (
+    'name' => 'omnilight/icons',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@omnilight' => $vendorDir . '/omnilight/icons/omnilight',
+    ),
   ),
 );

@@ -396,51 +396,6 @@
         ]
     },
     {
-        "name": "omnilight/icons",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/icons.git",
-            "reference": "1675712c78b39e19520368371ffb2931129355bd"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/icons/zipball/1675712c78b39e19520368371ffb2931129355bd",
-            "reference": "1675712c78b39e19520368371ffb2931129355bd",
-            "shasum": ""
-        },
-        "require": {
-            "fortawesome/font-awesome": "v4.0.3",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
-        },
-        "time": "2013-12-19 08:21:21",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "omnilight\\icons\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Yii2 extension for managing icons from Font Awesome",
-        "keywords": [
-            "font awesome",
-            "yii"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/icons/tree/master",
-            "issues": "https://github.com/omnilight/icons/issues"
-        }
-    },
-    {
         "name": "yiisoft/yii2-debug",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -717,6 +672,50 @@
         "support": {
             "source": "https://github.com/omnilight/yz2-admin/tree/master",
             "issues": "https://github.com/omnilight/yz2-admin/issues"
+        }
+    },
+    {
+        "name": "omnilight/icons",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/icons.git",
+            "reference": "d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/icons/zipball/d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb",
+            "reference": "d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb",
+            "shasum": ""
+        },
+        "require": {
+            "fortawesome/font-awesome": "v4.0.3",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master"
+        },
+        "time": "2013-12-19 09:30:56",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "omnilight\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yii2 extension for managing icons from Font Awesome",
+        "keywords": [
+            "font awesome",
+            "yii"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/icons/tree/master",
+            "issues": "https://github.com/omnilight/icons/issues"
         }
     }
 ]
