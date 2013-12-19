@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
+    'yz\\icons\\' => array($vendorDir . '/omnilight/icons'),
     'yz\\gii\\' => array($vendorDir . '/omnilight/yz2-gii'),
     'yz\\admin\\' => array($vendorDir . '/omnilight/yz2-admin'),
     'yz\\' => array($vendorDir . '/omnilight/yz2'),
@@ -14,7 +15,6 @@ return array(
     'yii\\composer\\' => array($vendorDir . '/yiisoft/yii2-composer'),
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
-    'omnilight\\' => array($vendorDir . '/omnilight/icons'),
     'Michelf' => array($vendorDir . '/michelf/php-markdown'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
     'Diff' => array($vendorDir . '/phpspec/php-diff/lib'),

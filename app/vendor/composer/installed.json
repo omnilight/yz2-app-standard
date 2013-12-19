@@ -678,15 +678,16 @@
         "name": "omnilight/icons",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
+        "target-dir": "yz",
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/icons.git",
-            "reference": "d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb"
+            "reference": "6821f2a0e5ec5ce8fbad5498f2437410d7a6de5f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/icons/zipball/d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb",
-            "reference": "d8fe6031d6805a31f074ee8ab3bfdc87dc8e5bbb",
+            "url": "https://api.github.com/repos/omnilight/icons/zipball/6821f2a0e5ec5ce8fbad5498f2437410d7a6de5f",
+            "reference": "6821f2a0e5ec5ce8fbad5498f2437410d7a6de5f",
             "shasum": ""
         },
         "require": {
@@ -694,12 +695,12 @@
             "php": ">=5.4.0",
             "yiisoft/yii2": "dev-master"
         },
-        "time": "2013-12-19 09:30:56",
+        "time": "2013-12-19 11:49:46",
         "type": "yii2-extension",
         "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "omnilight\\": ""
+                "yz\\icons\\": ""
             }
         },
         "authors": [

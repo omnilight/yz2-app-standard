@@ -75,7 +75,7 @@ return array (
     'version' => '9999999-dev',
     'alias' => 
     array (
-      '@omnilight' => $vendorDir . '/omnilight/icons/omnilight',
+      '@yz/icons' => $vendorDir . '/omnilight/icons/yz/icons',
     ),
   ),
 );
