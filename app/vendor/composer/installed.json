@@ -588,58 +588,6 @@
         }
     },
     {
-        "name": "omnilight/yz2-admin",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yz/admin",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "d3c07955d2592937ec03163c37d035ab63927aae"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/d3c07955d2592937ec03163c37d035ab63927aae",
-            "reference": "d3c07955d2592937ec03163c37d035ab63927aae",
-            "shasum": ""
-        },
-        "require": {
-            "omnilight/icons": "*",
-            "omnilight/yz2": "*",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "*",
-            "yiisoft/yii2-bootstrap": "*"
-        },
-        "time": "2013-12-19 08:20:14",
-        "type": "yii2-extension",
-        "extra": {
-            "bootstrap": "yz\\admin\\Extension"
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yz\\admin\\": ""
-            }
-        },
-        "authors": [
-            {
-                "name": "Pavel Agalecky",
-                "email": "pavel.agalecky@gmail.com"
-            }
-        ],
-        "description": "Module for managing administration panel",
-        "keywords": [
-            "administation panel",
-            "framework",
-            "yii",
-            "yz"
-        ],
-        "support": {
-            "source": "https://github.com/omnilight/yz2-admin/tree/master",
-            "issues": "https://github.com/omnilight/yz2-admin/issues"
-        }
-    },
-    {
         "name": "yiisoft/yii2",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -718,5 +666,57 @@
             "framework",
             "yii"
         ]
+    },
+    {
+        "name": "omnilight/yz2-admin",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yz/admin",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/yz2-admin.git",
+            "reference": "aeb74b15035947dfd3efbca8063ffef9404615e6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/aeb74b15035947dfd3efbca8063ffef9404615e6",
+            "reference": "aeb74b15035947dfd3efbca8063ffef9404615e6",
+            "shasum": ""
+        },
+        "require": {
+            "omnilight/icons": "*",
+            "omnilight/yz2": "*",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2013-12-19 09:25:42",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "yz\\admin\\Extension"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yz\\admin\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Module for managing administration panel",
+        "keywords": [
+            "administation panel",
+            "framework",
+            "yii",
+            "yz"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/yz2-admin/tree/master",
+            "issues": "https://github.com/omnilight/yz2-admin/issues"
+        }
     }
 ]
