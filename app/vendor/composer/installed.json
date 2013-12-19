@@ -88,15 +88,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "91fdd891000b1110c7585aab1156a3edea718567"
+            "reference": "edbd1a81e05efb78d2ecf30b4f24263fc25c8620"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/91fdd891000b1110c7585aab1156a3edea718567",
-            "reference": "91fdd891000b1110c7585aab1156a3edea718567",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/edbd1a81e05efb78d2ecf30b4f24263fc25c8620",
+            "reference": "edbd1a81e05efb78d2ecf30b4f24263fc25c8620",
             "shasum": ""
         },
-        "time": "2013-12-18 06:49:55",
+        "time": "2013-12-19 05:41:19",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -106,7 +106,7 @@
         "installation-source": "source",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "Apache-2.0"
+            "MIT"
         ],
         "authors": [
             {
@@ -253,53 +253,6 @@
         ]
     },
     {
-        "name": "yiisoft/yii2-debug",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "yii/debug",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "105b2be67ff02f6851d74a5b0c4f4b6e08f062df"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/105b2be67ff02f6851d74a5b0c4f4b6e08f062df",
-            "reference": "105b2be67ff02f6851d74a5b0c4f4b6e08f062df",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "*",
-            "yiisoft/yii2-bootstrap": "*"
-        },
-        "time": "2013-12-11 17:04:58",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "yii\\debug\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/",
-                "role": "Founder and project lead"
-            }
-        ],
-        "description": "The debugger extension for the Yii framework",
-        "keywords": [
-            "debug",
-            "debugger",
-            "yii"
-        ]
-    },
-    {
         "name": "yiisoft/yii2-gii",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -393,6 +346,148 @@
         ]
     },
     {
+        "name": "fortawesome/font-awesome",
+        "version": "v4.0.3",
+        "version_normalized": "4.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+            "shasum": ""
+        },
+        "require-dev": {
+            "jekyll": "1.0.2",
+            "lessc": "1.4.2"
+        },
+        "time": "2013-11-05 12:35:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OFL-1.1",
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Gandy",
+                "email": "dave@fontawesome.io",
+                "homepage": "http://twitter.com/davegandy",
+                "role": "Developer"
+            }
+        ],
+        "description": "The iconic font designed for Bootstrap",
+        "homepage": "http://fontawesome.io/",
+        "keywords": [
+            "FontAwesome",
+            "awesome",
+            "bootstrap",
+            "font",
+            "icon"
+        ]
+    },
+    {
+        "name": "omnilight/icons",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/omnilight/icons.git",
+            "reference": "1675712c78b39e19520368371ffb2931129355bd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/omnilight/icons/zipball/1675712c78b39e19520368371ffb2931129355bd",
+            "reference": "1675712c78b39e19520368371ffb2931129355bd",
+            "shasum": ""
+        },
+        "require": {
+            "fortawesome/font-awesome": "v4.0.3",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "dev-master",
+            "yiisoft/yii2-bootstrap": "dev-master"
+        },
+        "time": "2013-12-19 08:21:21",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "omnilight\\icons\\": ""
+            }
+        },
+        "authors": [
+            {
+                "name": "Pavel Agalecky",
+                "email": "pavel.agalecky@gmail.com"
+            }
+        ],
+        "description": "Yii2 extension for managing icons from Font Awesome",
+        "keywords": [
+            "font awesome",
+            "yii"
+        ],
+        "support": {
+            "source": "https://github.com/omnilight/icons/tree/master",
+            "issues": "https://github.com/omnilight/icons/issues"
+        }
+    },
+    {
+        "name": "yiisoft/yii2-debug",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "yii/debug",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-debug.git",
+            "reference": "97e24600932d511f419c114ef1d44e85211c47c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/97e24600932d511f419c114ef1d44e85211c47c2",
+            "reference": "97e24600932d511f419c114ef1d44e85211c47c2",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2013-12-19 03:13:29",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "yii\\debug\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            }
+        ],
+        "description": "The debugger extension for the Yii framework",
+        "keywords": [
+            "debug",
+            "debugger",
+            "yii"
+        ]
+    },
+    {
         "name": "omnilight/yz2",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -400,19 +495,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2.git",
-            "reference": "3bad8de5dee203a4462e44e07e4db86718428eef"
+            "reference": "51c72d7082ac07385bf22ac6d258304145986f78"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2/zipball/3bad8de5dee203a4462e44e07e4db86718428eef",
-            "reference": "3bad8de5dee203a4462e44e07e4db86718428eef",
+            "url": "https://api.github.com/repos/omnilight/yz2/zipball/51c72d7082ac07385bf22ac6d258304145986f78",
+            "reference": "51c72d7082ac07385bf22ac6d258304145986f78",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4.0",
             "yiisoft/yii2": "dev-master"
         },
-        "time": "2013-12-17 10:57:39",
+        "time": "2013-12-19 08:20:13",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -449,12 +544,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2-gii.git",
-            "reference": "fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb"
+            "reference": "b6cdc97a46f75ca30b716cb290c922bb81cc753c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb",
-            "reference": "fce0e6ddfbe0b6d8bbf73b02529bcf137b6deeeb",
+            "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/b6cdc97a46f75ca30b716cb290c922bb81cc753c",
+            "reference": "b6cdc97a46f75ca30b716cb290c922bb81cc753c",
             "shasum": ""
         },
         "require": {
@@ -463,7 +558,7 @@
             "yiisoft/yii2": "dev-master",
             "yiisoft/yii2-bootstrap": "dev-master"
         },
-        "time": "2013-12-18 15:58:54",
+        "time": "2013-12-19 08:20:14",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -500,22 +595,22 @@
         "source": {
             "type": "git",
             "url": "https://github.com/omnilight/yz2-admin.git",
-            "reference": "3152c205c2c1357ffa11fb99b624870ae2abde6a"
+            "reference": "d3c07955d2592937ec03163c37d035ab63927aae"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/3152c205c2c1357ffa11fb99b624870ae2abde6a",
-            "reference": "3152c205c2c1357ffa11fb99b624870ae2abde6a",
+            "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/d3c07955d2592937ec03163c37d035ab63927aae",
+            "reference": "d3c07955d2592937ec03163c37d035ab63927aae",
             "shasum": ""
         },
         "require": {
-            "fortawesome/font-awesome": "v4.0.3",
-            "omnilight/yz2": "dev-master",
+            "omnilight/icons": "*",
+            "omnilight/yz2": "*",
             "php": ">=5.4.0",
-            "yiisoft/yii2": "dev-master",
-            "yiisoft/yii2-bootstrap": "dev-master"
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2013-12-18 16:04:19",
+        "time": "2013-12-19 08:20:14",
         "type": "yii2-extension",
         "extra": {
             "bootstrap": "yz\\admin\\Extension"
@@ -551,12 +646,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "eb0b9129e609a52a2388966c2dbc1eba7effdcba"
+            "reference": "e6ac68b89c520befbcb4682880ac8284f1d094dd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/eb0b9129e609a52a2388966c2dbc1eba7effdcba",
-            "reference": "eb0b9129e609a52a2388966c2dbc1eba7effdcba",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/e6ac68b89c520befbcb4682880ac8284f1d094dd",
+            "reference": "e6ac68b89c520befbcb4682880ac8284f1d094dd",
             "shasum": ""
         },
         "require": {
@@ -569,7 +664,7 @@
             "yiisoft/jquery": "1.10.*",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2013-12-18 16:22:56",
+        "time": "2013-12-18 16:56:19",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -622,56 +717,6 @@
         "keywords": [
             "framework",
             "yii"
-        ]
-    },
-    {
-        "name": "fortawesome/font-awesome",
-        "version": "v4.0.3",
-        "version_normalized": "4.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/FortAwesome/Font-Awesome.git",
-            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
-            "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
-            "shasum": ""
-        },
-        "require-dev": {
-            "jekyll": "1.0.2",
-            "lessc": "1.4.2"
-        },
-        "time": "2013-11-05 12:35:21",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "OFL-1.1",
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Dave Gandy",
-                "email": "dave@fontawesome.io",
-                "homepage": "http://twitter.com/davegandy",
-                "role": "Developer"
-            }
-        ],
-        "description": "The iconic font designed for Bootstrap",
-        "homepage": "http://fontawesome.io/",
-        "keywords": [
-            "FontAwesome",
-            "awesome",
-            "bootstrap",
-            "font",
-            "icon"
         ]
     }
 ]

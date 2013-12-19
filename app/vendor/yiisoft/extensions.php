@@ -3,15 +3,6 @@
 $vendorDir = dirname(__DIR__);
 
 return array (
-  'yiisoft/yii2-debug' => 
-  array (
-    'name' => 'yiisoft/yii2-debug',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug/yii/debug',
-    ),
-  ),
   'yiisoft/yii2-gii' => 
   array (
     'name' => 'yiisoft/yii2-gii',
@@ -37,6 +28,24 @@ return array (
     'alias' => 
     array (
       '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/yii/bootstrap',
+    ),
+  ),
+  'omnilight/icons' => 
+  array (
+    'name' => 'omnilight/icons',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@omnilight/icons' => $vendorDir . '/omnilight/icons/omnilight/icons',
+    ),
+  ),
+  'yiisoft/yii2-debug' => 
+  array (
+    'name' => 'yiisoft/yii2-debug',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug/yii/debug',
     ),
   ),
   'omnilight/yz2' => 
