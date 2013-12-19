@@ -34,6 +34,7 @@ return \yii\helpers\ArrayHelper::merge(
                 'allowedIPs' => ['*'],
 				'generators' => [
 					'yz-model' => ['class' => 'yz\gii\generators\model\Generator'],
+					'yz-crud' => ['class' => 'yz\gii\generators\crud\Generator'],
 				],
             ],
             'debug' => [
