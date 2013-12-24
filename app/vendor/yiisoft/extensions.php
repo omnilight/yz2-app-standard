@@ -21,15 +21,6 @@ return array (
       '@kartik' => $vendorDir . '/kartik-v/yii2-widgets/kartik',
     ),
   ),
-  'yiisoft/yii2-bootstrap' => 
-  array (
-    'name' => 'yiisoft/yii2-bootstrap',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/yii/bootstrap',
-    ),
-  ),
   'yiisoft/yii2-debug' => 
   array (
     'name' => 'yiisoft/yii2-debug',
@@ -38,16 +29,6 @@ return array (
     array (
       '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug/yii/debug',
     ),
-  ),
-  'omnilight/yz2' => 
-  array (
-    'name' => 'omnilight/yz2',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@yz' => $vendorDir . '/omnilight/yz2/yz',
-    ),
-    'bootstrap' => 'yz\\admin\\Extension',
   ),
   'omnilight/yz2-gii' => 
   array (
@@ -77,5 +58,24 @@ return array (
     array (
       '@yz/icons' => $vendorDir . '/omnilight/icons/yz/icons',
     ),
+  ),
+  'yiisoft/yii2-bootstrap' => 
+  array (
+    'name' => 'yiisoft/yii2-bootstrap',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/yii/bootstrap',
+    ),
+  ),
+  'omnilight/yz2' => 
+  array (
+    'name' => 'omnilight/yz2',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yz' => $vendorDir . '/omnilight/yz2/yz',
+    ),
+    'bootstrap' => 'yz\\admin\\Extension',
   ),
 );
