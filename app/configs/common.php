@@ -28,9 +28,14 @@ return \yii\helpers\ArrayHelper::merge(
                 'username' => 'root',
                 'password' => 'mysqlroot',
                 'charset' => 'utf8',
-                // All tables in Yz uses format {{%tableName}} so do not remove tablePrefix property
+                // All tables in Yz uses format {{%tableName}} so do not remove tablePrefix property, but
+				// change it to your own
                 'tablePrefix' => 'yz_',
             ],
+			'formatter' => [
+				'class' => 'yii\base\Formatter',
+				//'class' => 'yii\i18n\Formatter',
+			],
             'log' => [
                 'traceLevel' => YII_DEBUG ? 3 : 0,
                 'targets' => [
@@ -42,10 +47,11 @@ return \yii\helpers\ArrayHelper::merge(
             ],
         ],
         'params' => [
+			// Type of the current application. Standard types are: frontend, backend, console
             'application-type' => YZ_APP_TYPE,
         ],
     ],
     YII_ENV_DEV? [
-
+		// Development configuration goes here
     ] : []
 );
