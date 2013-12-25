@@ -1,6 +1,6 @@
 {
     "name": "omnilight/yz2-app-standard",
-    "description": "Stantard application based on Yii2 and Yz2",
+    "description": "Standard application based on Yii2 and Yz2",
     "keywords": ["yii", "framework", "yz", "application template"],
     "minimum-stability": "dev",
     "authors": [
@@ -12,20 +12,8 @@
     "type": "project",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/omnilight/yz2"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/omnilight/yz2-admin"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/omnilight/yz2-gii"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/omnilight/icons"
+            "type": "composer",
+            "url": "http://git.zakazpodarka.ru"
         }
     ],
     "require": {
