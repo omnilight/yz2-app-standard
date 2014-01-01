@@ -3,6 +3,8 @@
 return \yii\helpers\ArrayHelper::merge(
     (require __DIR__ . '/common.php'),
     [
+		'runtimePath' => __DIR__ . '/../runtime/backend',
+
 		'controllerPath' => __DIR__ . '/../controllers/backend',
 		'controllerNamespace' => 'app\controllers\backend',
         'modules' => require(__DIR__ . '/modules/backend.php'),

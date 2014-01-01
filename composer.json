@@ -36,14 +36,12 @@
     },
     "extra": {
         "writable": [
-            "backend/runtime",
-            "backend/web/assets",
+            "app/runtime/frontend",
+            "app/runtime/backend",
+            "app/runtime/console"
+        ],
+        "executable": [
 
-            "console/runtime",
-            "console/migrations",
-
-            "frontend/runtime",
-            "frontend/web/assets"
         ]
     }
 }
