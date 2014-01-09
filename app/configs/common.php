@@ -12,8 +12,6 @@ return \yii\helpers\ArrayHelper::merge(
         'basePath' => dirname(__DIR__),
         'preload' => [],
         'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
-		'controllerPath' => __DIR__ . '/../controllers/frontend',
-		'controllerNamespace' => 'app\controllers\frontend',
         'modules' => require(__DIR__ . '/modules/common.php'),
         'components' => [
             'cache' => [
