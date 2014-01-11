@@ -11,7 +11,7 @@ define('YZ_APP_TYPE_FRONTEND', YZ_APP_TYPE == 'frontend');
 define('YZ_APP_TYPE_CONSOLE', YZ_APP_TYPE == 'console');
 
 require(YZ_VENDOR_DIR . '/autoload.php');
-require(YZ_VENDOR_DIR . '/yiisoft/yii2/yii/Yii.php');
+require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
 
 $config = require YZ_APP_DIR . '/configs/backend.php';
 
