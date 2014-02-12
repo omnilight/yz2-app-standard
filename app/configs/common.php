@@ -43,9 +43,6 @@ return \yii\helpers\ArrayHelper::merge(
                     ],
                 ],
             ],
-			'messages' => [
-				'class' => 'yz\components\Messages',
-			],
         ],
         'params' => [
 			// Type of the current application. Standard types are: frontend, backend, console
