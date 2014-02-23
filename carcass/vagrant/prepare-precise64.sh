@@ -29,7 +29,8 @@ apt-get update
 # `vim mysql-client` is for ease of using the VM through `vagrant ssh`
 # `php5-curl` is a requirement for Goutte library required by Mink Selenium driver
 # `git` is required because we will use Composer from inside Vagrant VM
-apt-get install -y apache2 php5 php5-dev php-pear php5-curl vim mysql-client mysql-server php5-mysqlnd git le mc
+apt-get install -y apache2 php5 php5-dev php-pear php5-curl php5-intl php5-gd \
+ 					vim mysql-client mysql-server php5-mysqlnd git le mc
 sudo pecl install xdebug
 
 xdebug=`find / -name "xdebug.so" 2>/dev/null`
