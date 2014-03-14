@@ -9,7 +9,6 @@ return \yii\helpers\ArrayHelper::merge(
     [
 		'runtimePath' => __DIR__ . '/../runtime/console',
 
-        'controllerPath' => __DIR__ . '/../controllers/console',
         'controllerNamespace' => 'app\controllers\console',
         'modules' => require(__DIR__ . '/modules/console.php'),
         'params' => [

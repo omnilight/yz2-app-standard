@@ -6,7 +6,6 @@ return \yii\helpers\ArrayHelper::merge(
 		'runtimePath' => __DIR__ . '/../runtime/backend',
 		'viewPath' => __DIR__ . '/../views/backend',
 
-		'controllerPath' => __DIR__ . '/../controllers/backend',
 		'controllerNamespace' => 'app\controllers\backend',
         'modules' => require(__DIR__ . '/modules/backend.php'),
         'components' => [
