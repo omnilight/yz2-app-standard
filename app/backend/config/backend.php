@@ -3,11 +3,7 @@
 return \yii\helpers\ArrayHelper::merge(
     (require __DIR__ . '/common.php'),
     [
-		'runtimePath' => __DIR__ . '/../runtime/backend',
-		'viewPath' => __DIR__ . '/../views/backend',
-
 		'controllerNamespace' => 'app\controllers\backend',
-        'modules' => require(__DIR__ . '/modules/backend.php'),
         'components' => [
             'urlManager' => [
                 // Yz UrlManager by default uses pretty urls and script name
@@ -17,7 +13,7 @@ return \yii\helpers\ArrayHelper::merge(
                 ],
             ],
             'user' => [
-                'identityClass' => '\yz\admin\models\User',
+                'identityClass' => '\yz\admin\common\models\User',
                 'enableAutoLogin' => false,
 				'loginUrl' => ['admin/main/login']
             ],
@@ -25,6 +21,11 @@ return \yii\helpers\ArrayHelper::merge(
                 'class' => '\yz\admin\components\AuthManager',
             ]
         ],
+		'modules' => [
+			'admin' => [
+				'class' => '\yz\admin\Module',
+			]
+		],
         'params' => [
 
         ],

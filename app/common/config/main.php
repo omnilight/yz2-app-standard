@@ -8,7 +8,6 @@ return [
 	'sourceLanguage' => 'en-US',
 	'preload' => [],
 	'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
-	'modules' => require(__DIR__ . '/modules/common.php'),
 	'components' => [
 		'cache' => [
 			'class' => 'yii\caching\DummyCache',
