@@ -7,6 +7,7 @@ define('YZ_VENDOR_DIR',__DIR__.'/../../app/vendor');
 
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
+require(YZ_APP_DIR . '/common/config/aliases.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
 	YZ_APP_DIR . '/common/config/main.php',
