@@ -6,8 +6,18 @@ defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 // fcgi doesn't have STDIN defined by default
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 
-define('YZ_APP_DIR', __DIR__ . '/..');
-define('YZ_VENDOR_DIR', __DIR__ . '/../vendor');
+switch (YII_ENV) {
+    case 'dev':
+        define('YZ_APP_DIR', __DIR__.'/..');
+        define('YZ_VENDOR_DIR',__DIR__.'/../vendor');
+        break;
+    case 'prod':
+        define('YZ_APP_DIR', __DIR__.'/..');
+        define('YZ_VENDOR_DIR',__DIR__.'/../vendor');
+        break;
+    default:
+        throw new Exception("Unknown YII_ENV: ".YII_ENV);
+}
 
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
