@@ -26,6 +26,12 @@
         "omnilight/yz2-admin": "*",
         "omnilight/yz2-gii": "*"
     },
+    "autoload": {
+        "frontend\\": "app/frontend",
+        "backend\\": "app/backend",
+        "console\\": "app/console",
+        "modules\\": "app/modules"
+    },
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::setPermission"
@@ -36,12 +42,12 @@
     },
     "extra": {
         "writable": [
-            "app/runtime/frontend",
-            "app/runtime/backend",
-            "app/runtime/console"
+            "app/frontend/runtime",
+            "app/backend/runtime",
+            "app/console/runtime"
         ],
         "executable": [
-
+            "app/bin/yii"
         ]
     }
 }
