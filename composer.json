@@ -27,10 +27,12 @@
         "omnilight/yz2-gii": "*"
     },
     "autoload": {
-        "frontend\\": "app/frontend",
-        "backend\\": "app/backend",
-        "console\\": "app/console",
-        "modules\\": "app/modules"
+        "psr-4": {
+            "frontend\\": "app/frontend",
+            "backend\\": "app/backend",
+            "console\\": "app/console",
+            "modules\\": "app/modules"
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
