@@ -1,5 +1,5 @@
 <?php
-defined('YII_ENV') || define('YII_ENV', getenv('APP_ENV')?:'prod');
+defined('YII_ENV') || define('YII_ENV', 'dev');
 defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 
 define('YZ_APP_DIR', __DIR__.'/../app');
@@ -11,9 +11,9 @@ require(YZ_APP_DIR . '/common/config/aliases.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
 	YZ_APP_DIR . '/common/config/main.php',
-	YZ_APP_DIR . '/common/config/main-local.php',
+	YZ_APP_DIR . '/common/config/main-'.YII_ENV.'.php',
 	YZ_APP_DIR . '/frontend/config/main.php',
-	YZ_APP_DIR . '/frontend/config/main-local.php'
+	YZ_APP_DIR . '/frontend/config/main-'.YII_ENV.'.php'
 );
 
 $application = new yii\web\Application($config);

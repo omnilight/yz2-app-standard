@@ -15,9 +15,9 @@ require(YZ_APP_DIR . '/common/config/aliases.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
     YZ_APP_DIR . '/common/config/main.php',
-    YZ_APP_DIR . '/common/config/main-local.php',
-    YZ_APP_DIR . '/console/config/main-local.php',
-    YZ_APP_DIR . '/console/config/main.php'
+    YZ_APP_DIR . '/common/config/main-'.YII_ENV.'.php',
+    YZ_APP_DIR . '/console/config/main.php',
+    YZ_APP_DIR . '/console/config/main-'.YII_ENV.'.php'
 );
 
 $application = new yii\console\Application($config);

@@ -14,17 +14,6 @@ return [
             //'class' => 'yii\caching\FileCache',
             //'class' => 'yii\caching\MemCache',
         ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            // Your connection settings go there
-            'dsn' => 'mysql:host=localhost;dbname=yz2app',
-            'username' => 'root',
-            'password' => 'mysqlroot',
-            'charset' => 'utf8',
-            // All tables in Yz uses format {{%tableName}} so do not remove tablePrefix property, but
-            // change it to your own
-            'tablePrefix' => 'yz_',
-        ],
         'formatter' => [
             'class' => 'yii\base\Formatter',
             //'class' => 'yii\i18n\Formatter',
