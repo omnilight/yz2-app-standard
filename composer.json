@@ -40,8 +40,10 @@
         ]
     },
     "config": {
-        "vendor-dir": "app/vendor"
+        "vendor-dir": "app/vendor",
+        "bin-dir": "app/bin"
     },
+    "bin": ["app/console/yii"],
     "extra": {
         "writable": [
             "app/frontend/runtime",
@@ -49,7 +51,7 @@
             "app/console/runtime"
         ],
         "executable": [
-            "app/bin/yii"
+            "app/console/yii"
         ]
     }
 }
