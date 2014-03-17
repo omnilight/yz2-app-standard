@@ -3,10 +3,10 @@
 return \yii\helpers\ArrayHelper::merge(
     (require __DIR__ . '/common.php'),
     [
-		'runtimePath' => __DIR__ . '/../runtime/frontend',
-		'viewPath' => __DIR__ . '/../views/frontend',
+        'runtimePath' => __DIR__ . '/../runtime/frontend',
+        'viewPath' => __DIR__ . '/../views/frontend',
 
-		'controllerNamespace' => 'app\controllers\frontend',
+        'controllerNamespace' => 'app\controllers\frontend',
         'modules' => require(__DIR__ . '/modules/frontend.php'),
         'components' => [
             'urlManager' => [
@@ -27,7 +27,7 @@ return \yii\helpers\ArrayHelper::merge(
 
         ],
     ],
-    YII_ENV_DEV? [
+    YII_ENV_DEV ? [
         'modules' => [
             'debug' => 'yii\debug\Module',
         ],

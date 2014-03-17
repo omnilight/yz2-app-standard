@@ -7,7 +7,7 @@ Yii::$objectConfig['yii\console\controllers\MigrateController'] = [
 return \yii\helpers\ArrayHelper::merge(
     (require __DIR__ . '/common.php'),
     [
-		'runtimePath' => __DIR__ . '/../runtime/console',
+        'runtimePath' => __DIR__ . '/../runtime/console',
 
         'controllerNamespace' => 'app\controllers\console',
         'modules' => require(__DIR__ . '/modules/console.php'),
@@ -15,7 +15,7 @@ return \yii\helpers\ArrayHelper::merge(
 
         ],
     ],
-    YII_ENV_DEV? [
+    YII_ENV_DEV ? [
 
     ] : []
 );
