@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'components' => [
         'urlManager' => [

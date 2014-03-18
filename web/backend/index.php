@@ -20,10 +20,10 @@ require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
 require(YZ_APP_DIR . '/common/config/aliases.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
-    YZ_APP_DIR . '/common/config/main.php',
-    YZ_APP_DIR . '/common/config/main-'.YII_ENV.'.php',
-    YZ_APP_DIR . '/backend/config/main.php',
-    YZ_APP_DIR . '/backend/config/main-'.YII_ENV.'.php'
+    require(YZ_APP_DIR . '/common/config/main.php'),
+    require(YZ_APP_DIR . '/common/config/main-'.YII_ENV.'.php'),
+    require(YZ_APP_DIR . '/backend/config/main.php'),
+    require(YZ_APP_DIR . '/backend/config/main-'.YII_ENV.'.php')
 );
 
 $application = new yii\web\Application($config);

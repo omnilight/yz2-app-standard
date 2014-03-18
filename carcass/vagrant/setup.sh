@@ -3,9 +3,6 @@
 # Moving to codebase root now
 cd /vagrant
 
-# Firing up the Composer to install thirdparty libraries
-php composer.phar install
-
 # Adding evironment variable to mark this box as development
 echo APP_ENV=dev >> /etc/environment
 

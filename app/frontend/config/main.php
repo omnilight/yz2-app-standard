@@ -1,8 +1,8 @@
 <?php
 
 return [
+    'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'frontend\controllers',
-    'modules' => require(__DIR__ . '/modules/frontend.php'),
     'components' => [
         'urlManager' => [
             // Yz UrlManager by default uses pretty urls and script name
@@ -17,6 +17,9 @@ return [
         'user' => [
             'identityClass' => '\app\models\User',
         ],
+    ],
+    'modules' => [
+
     ],
     'params' => [
 
