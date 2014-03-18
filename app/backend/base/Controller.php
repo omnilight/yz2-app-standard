@@ -3,8 +3,10 @@
 namespace backend\base;
 
 use yii\base\Action;
+use yii\base\Model;
 use yii\web\AccessControl;
 use yii\web\AccessRule;
+use yii\web\BadRequestHttpException;
 use yz\admin\components\AuthManager;
 
 
@@ -53,5 +55,33 @@ class Controller extends \yii\web\Controller
     protected function checkAccess($rule, $action)
     {
         return \Yii::$app->user->checkAccess(AuthManager::getOperationName($this, $action->id));
+    }
+
+    /**
+     * @param Model $model
+     * @param array $actions
+     * @throws \yii\web\BadRequestHttpException
+     * @return \yii\web\Response
+     */
+    protected function getCreateUpdateResponse($model, $actions = [])
+    {
+        $defaultActions = [
+            'save_and_stay' => function () use ($model) {
+                    return $this->redirect(['update', 'id' => $model->id]);
+                },
+            'save_and_create' => function () use ($model) {
+                    return $this->redirect(['create']);
+                },
+            'save_and_leave' => function () use ($model) {
+                    return $this->redirect(['index']);
+                },
+        ];
+
+        $actions = array_merge($defaultActions, $actions);
+
+        if (isset($actions[\Yii::$app->request->post('action', 'save_and_leave')]))
+            return call_user_func($actions[\Yii::$app->request->post('action')]);
+        else
+            throw new BadRequestHttpException('Unknown action: '.\Yii::$app->request->post('action'));
     }
 } 
