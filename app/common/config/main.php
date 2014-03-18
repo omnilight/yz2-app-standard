@@ -8,7 +8,32 @@ return [
     'sourceLanguage' => 'en-US',
     'preload' => [],
     'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
+    'vendorPath' => YZ_VENDOR_DIR,
     'components' => [
+        'i18n' => [
+            'translations' => [
+                'common' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@common/messages',
+                    'sourceLanguage' => 'en-US',
+                ],
+                'frontend' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/messages',
+                    'sourceLanguage' => 'en-US',
+                ],
+                'backend' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@backend/messages',
+                    'sourceLanguage' => 'en-US',
+                ],
+                'console' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@console/messages',
+                    'sourceLanguage' => 'en-US',
+                ],
+            ]
+        ],
         'formatter' => [
             'class' => 'yii\base\Formatter',
             //'class' => 'yii\i18n\Formatter',

@@ -24,9 +24,9 @@ class SiteController extends Controller
      */
     public function actionPage($name)
     {
-        $viewFile = $this->findViewFile('pages/'.$name);
+        $viewFile = $this->findViewFile('pages/'.$name) . '.php';
         if (file_exists($viewFile))
-            return $this->render('pages'.$name);
+            return $this->render('pages/'.$name);
         else
             throw new NotFoundHttpException();
     }

@@ -121,3 +121,314 @@ Stack trace:
   ),
   'argc' => 1,
 )
+2014/03/18 13:01:36 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: help/index
+2014/03/18 13:01:36 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\HelpController::actionIndex()
+2014/03/18 13:01:36 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147696.0752721,
+  'REQUEST_TIME' => 1395147696,
+  'argv' => 
+  array (
+    0 => 'yii',
+  ),
+  'argc' => 1,
+)
+2014/03/18 13:01:42 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: cache/index
+2014/03/18 13:01:42 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\CacheController::actionIndex()
+2014/03/18 13:01:42 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147702.330822,
+  'REQUEST_TIME' => 1395147702,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'cache',
+  ),
+  'argc' => 2,
+)
+2014/03/18 13:01:49 [-] [-] [-] [error] [yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "man".' in /vagrant/app/vendor/yiisoft/yii2/base/Module.php:587
+Stack trace:
+#0 /vagrant/app/vendor/yiisoft/yii2/console/Application.php(173): yii\base\Module->runAction('man', Array)
+#1 /vagrant/app/vendor/yiisoft/yii2/console/Application.php(140): yii\console\Application->runAction('man', Array)
+#2 /vagrant/app/vendor/yiisoft/yii2/base/Application.php(302): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /vagrant/app/bin/yii(34): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Неизвестная команда "man".' in /vagrant/app/vendor/yiisoft/yii2/console/Application.php:175
+Stack trace:
+#0 /vagrant/app/vendor/yiisoft/yii2/console/Application.php(140): yii\console\Application->runAction('man', Array)
+#1 /vagrant/app/vendor/yiisoft/yii2/base/Application.php(302): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /vagrant/app/bin/yii(34): yii\base\Application->run()
+#3 {main}
+2014/03/18 13:01:49 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147709.3314819,
+  'REQUEST_TIME' => 1395147709,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'man',
+    2 => 'cache',
+  ),
+  'argc' => 3,
+)
+2014/03/18 13:01:54 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: help/index
+2014/03/18 13:01:54 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\HelpController::actionIndex()
+2014/03/18 13:01:54 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147714.5477149,
+  'REQUEST_TIME' => 1395147714,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'help',
+    2 => 'cache',
+  ),
+  'argc' => 3,
+)
+2014/03/18 13:02:49 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: cache/flush
+2014/03/18 13:02:49 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\CacheController::actionFlush()
+2014/03/18 13:02:49 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147769.1554551,
+  'REQUEST_TIME' => 1395147769,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'cache/flush',
+  ),
+  'argc' => 2,
+)
+2014/03/18 13:02:52 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: cache/flush
+2014/03/18 13:02:52 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\CacheController::actionFlush()
+2014/03/18 13:02:51 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147771.8706861,
+  'REQUEST_TIME' => 1395147771,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'cache/flush',
+  ),
+  'argc' => 2,
+)
+2014/03/18 13:02:55 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: cache/index
+2014/03/18 13:02:55 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\CacheController::actionIndex()
+2014/03/18 13:02:55 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395147775.2089119,
+  'REQUEST_TIME' => 1395147775,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'cache/index',
+  ),
+  'argc' => 2,
+)
+2014/03/18 13:50:39 [-] [-] [-] [trace] [yii\base\Controller::runAction] Route to run: migrate/up
+2014/03/18 13:50:39 [-] [-] [-] [trace] [yii\base\InlineAction::runWithParams] Running action: yii\console\controllers\MigrateController::actionUp()
+2014/03/18 13:50:39 [-] [-] [-] [trace] [yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=yz2app
+2014/03/18 13:50:39 [-] [-] [-] [info] [application] $_SERVER = array (
+  'TERM' => 'xterm',
+  'SHELL' => '/bin/bash',
+  'SSH_CLIENT' => '10.0.2.2 59916 22',
+  'SSH_TTY' => '/dev/pts/0',
+  'LC_ALL' => 'en_US',
+  'USER' => 'vagrant',
+  'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+  'MAIL' => '/var/mail/vagrant',
+  'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant_ruby/bin',
+  'PWD' => '/vagrant/app/bin',
+  'LANG' => 'en_US.UTF-8',
+  'SHLVL' => '1',
+  'HOME' => '/home/vagrant',
+  'LOGNAME' => 'vagrant',
+  'SSH_CONNECTION' => '10.0.2.2 59916 10.0.2.15 22',
+  'LESSOPEN' => '| /usr/bin/lesspipe %s',
+  'APP_ENV' => 'dev',
+  'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+  'OLDPWD' => '/home/vagrant',
+  '_' => '/usr/bin/php',
+  'PHP_SELF' => 'yii',
+  'SCRIPT_NAME' => 'yii',
+  'SCRIPT_FILENAME' => 'yii',
+  'PATH_TRANSLATED' => 'yii',
+  'DOCUMENT_ROOT' => '',
+  'REQUEST_TIME_FLOAT' => 1395150639.142648,
+  'REQUEST_TIME' => 1395150639,
+  'argv' => 
+  array (
+    0 => 'yii',
+    1 => 'migrate',
+    2 => '--migrationPath=@yz/admin/migrations',
+  ),
+  'argc' => 3,
+)
