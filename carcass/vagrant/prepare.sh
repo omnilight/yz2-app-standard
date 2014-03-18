@@ -51,7 +51,7 @@ sed -ri 's/^(export APACHE_RUN_GROUP=)(.*)$/\1vagrant/' /etc/apache2/envvars
 
 # Shut up Apache spouting nonsense about ServerName not defined.
 touch /etc/apache2/conf-available/globalname.conf
-echo "ServerName boilerplate" > /etc/apache2/conf-available/globalname.conf
+echo "ServerName yii2app" > /etc/apache2/conf-available/globalname.conf
 cd /etc/apache2/conf-enabled
 ln -s ../conf-available/globalname.conf globalname.conf
 
