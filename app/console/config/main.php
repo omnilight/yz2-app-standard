@@ -1,11 +1,13 @@
 <?php
 
-Yii::$objectConfig['yii\console\controllers\MigrateController'] = [
-    'migrationTable' => '{{%migrations}}'
-];
-
 return [
-    'controllerNamespace' => 'console\controllers',
+    'controllerNamespace' => 'console\controllers   ',
+    'controllerMap' => [
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationTable' => '{{%migrations}}',
+        ],
+    ],
     'components' => [
 
     ],
