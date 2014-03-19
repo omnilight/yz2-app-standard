@@ -1,7 +1,5 @@
 <?php
 
-Yii::setAlias('@app', YZ_APP_DIR);
-
 return [
     'id' => 'yz2-app-standard',
     'language' => 'ru',

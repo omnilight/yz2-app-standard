@@ -17,7 +17,7 @@ switch (YII_ENV) {
 
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
-require(YZ_APP_DIR . '/common/config/aliases.php');
+require(YZ_APP_DIR . '/common/config/aliases-'.YII_ENV.'.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
     require(YZ_APP_DIR . '/common/config/main.php'),
