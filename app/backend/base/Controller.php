@@ -78,10 +78,11 @@ class Controller extends \yii\web\Controller
         ];
 
         $actions = array_merge($defaultActions, $actions);
+        $actionName = \Yii::$app->request->post('action', 'save_and_leave');
 
-        if (isset($actions[\Yii::$app->request->post('action', 'save_and_leave')]))
-            return call_user_func($actions[\Yii::$app->request->post('action')]);
+        if (isset($actions[$actionName]))
+            return call_user_func($actions[$actionName]);
         else
-            throw new BadRequestHttpException('Unknown action: '.\Yii::$app->request->post('action'));
+            throw new BadRequestHttpException('Unknown action: '.$actionName);
     }
 } 
