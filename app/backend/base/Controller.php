@@ -78,7 +78,7 @@ class Controller extends \yii\web\Controller
         ];
 
         $actions = array_merge($defaultActions, $actions);
-        $actionName = \Yii::$app->request->post('action', 'save_and_leave');
+        $actionName = \Yii::$app->request->post('__action', 'save_and_leave');
 
         if (isset($actions[$actionName]))
             return call_user_func($actions[$actionName]);

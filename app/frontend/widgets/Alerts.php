@@ -2,19 +2,20 @@
 
 namespace frontend\widgets;
 
+use yii\bootstrap\Alert;
 use yii\bootstrap\Widget;
 use yz\Yz;
 
 
 /**
- * Class Alert
+ * Class Alerts
  * @package \frontend\widgets
  */
 
 /**
- * Class Alert
+ * Class Alerts
  *
- * Alert widget renders a message from session flash. All flash messages are displayed
+ * Alerts widget renders a message from session flash. All flash messages are displayed
  * in the sequence they were assigned using setFlash. You can set message as following:
  *
  * - \Yii::$app->getSession()->setFlash('error', 'This is the message');
@@ -25,7 +26,7 @@ use yz\Yz;
  * @author Alexander Makarov <sam@rmcreative.ru>
  * @package \frontend\widgets
  */
-class Alert extends \yii\bootstrap\Widget
+class Alerts extends Widget
 {
     /**
      * @var array the alert types configuration for the flash messages.
@@ -61,7 +62,7 @@ class Alert extends \yii\bootstrap\Widget
                 /* assign unique id to each alert box */
                 $this->options['id'] = $this->getId() . '-' . $type;
 
-                echo \yii\bootstrap\Alert::widget([
+                echo Alert::widget([
                     'body' => $message,
                     'closeButton' => $this->closeButton,
                     'options' => $this->options,

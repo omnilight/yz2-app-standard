@@ -1,5 +1,5 @@
 <?php
-use frontend\widgets\Alert;
+use frontend\widgets\Alerts;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
@@ -47,7 +47,7 @@ use yii\widgets\Breadcrumbs;
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
-            <?= Alert::widget() ?>
+            <?= Alerts::widget() ?>
             <?= $content ?>
         </div>
     </div>
