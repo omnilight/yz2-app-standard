@@ -1,5 +1,5 @@
 <?php
-defined('YII_ENV') || define('YII_ENV', 'dev');
+defined('YII_ENV') || define('YII_ENV', getenv('APP_ENV')?:'prod');
 defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 
 switch (YII_ENV) {
