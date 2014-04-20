@@ -46,6 +46,7 @@ class Controller extends \yii\web\Controller
         ];
     }
 
+
     /**
      * Checks access to the action of the controller for currently logged user
      * @param AccessRule $rule
