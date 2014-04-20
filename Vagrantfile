@@ -11,8 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "carcass/vagrant/prepare.sh"
   config.vm.provision :shell, :path => "carcass/vagrant/setup.sh"
 
-  config.vm.network "forwarded_port", guest: 80, host: 8880, auto_correct: true # frontend
-  # config.vm.network "forwarded_port", guest: 81, host: 8881, auto_correct: true # backend
+  config.vm.network "forwarded_port", guest: 80, host: 8880, auto_correct: true
 
   config.vm.provider :virtualbox do |virtualbox|
     virtualbox.customize ["modifyvm", :id, "--name", "demo-msforyou"]

@@ -5,10 +5,13 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'components' => [
         'urlManager' => [
-            // Yz UrlManager by default uses pretty urls and script name
-            'class' => '\yz\components\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
             'rules' => [
-
+                '' => 'admin/main/index',
+                'login' => 'admin/main/login',
+                'logout' => 'admin/main/logout',
+                'profile' => 'admin/profile/index',
             ],
         ],
         'user' => [

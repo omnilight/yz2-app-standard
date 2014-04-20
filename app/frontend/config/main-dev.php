@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'preload' => ['debug'],
+    'bootstrap' => ['debug'],
     'modules' => [
         'debug' => [
             'class' => 'yii\debug\Module',

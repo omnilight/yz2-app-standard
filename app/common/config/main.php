@@ -4,7 +4,6 @@ return [
     'id' => 'yz2-app-standard',
     'language' => 'ru',
     'sourceLanguage' => 'en-US',
-    'preload' => [],
     'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
     'vendorPath' => YZ_VENDOR_DIR,
     'components' => [
