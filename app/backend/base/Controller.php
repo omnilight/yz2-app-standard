@@ -3,9 +3,9 @@
 namespace backend\base;
 
 use yii\base\Action;
-use yii\base\Model;
-use yii\web\AccessControl;
-use yii\web\AccessRule;
+use yii\db\ActiveRecord;
+use yii\filters\AccessControl;
+use yii\filters\AccessRule;
 use yii\web\BadRequestHttpException;
 use yz\admin\components\AuthManager;
 
@@ -54,11 +54,11 @@ class Controller extends \yii\web\Controller
      */
     protected function checkAccess($rule, $action)
     {
-        return \Yii::$app->user->checkAccess(AuthManager::getOperationName($this, $action->id));
+        return \Yii::$app->user->can(AuthManager::getOperationName($this, $action->id));
     }
 
     /**
-     * @param Model $model
+     * @param ActiveRecord $model
      * @param array $actions
      * @throws \yii\web\BadRequestHttpException
      * @return \yii\web\Response
@@ -67,7 +67,7 @@ class Controller extends \yii\web\Controller
     {
         $defaultActions = [
             'save_and_stay' => function () use ($model) {
-                    return $this->redirect(['update', 'id' => $model->id]);
+                    return $this->redirect(['update', 'id' => $model->getPrimaryKey()]);
                 },
             'save_and_create' => function () use ($model) {
                     return $this->redirect(['create']);

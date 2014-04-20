@@ -1,7 +1,7 @@
 <?php
 
 namespace frontend\base;
-use yii\web\AccessControl;
+use yii\filters\AccessControl;
 
 
 /**
