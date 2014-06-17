@@ -13,6 +13,6 @@ use yii\helpers\Url;
  * you can overwrite this file
  */
 
-$this->beginContent('@yz/admin/view/layouts/base.php');
+$this->beginContent('@yz/admin/views/layouts/base.php');
 echo $content;
 $this->endContent();
