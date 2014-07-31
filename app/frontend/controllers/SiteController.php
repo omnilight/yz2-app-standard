@@ -2,7 +2,9 @@
 
 namespace frontend\controllers;
 use frontend\base\Controller;
+use yii\web\ErrorAction;
 use yii\web\NotFoundHttpException;
+use yii\web\ViewAction;
 
 
 /**
@@ -11,24 +13,30 @@ use yii\web\NotFoundHttpException;
  */
 class SiteController extends Controller
 {
+    public function getAccessRules()
+    {
+        return array_merge([
+            [
+                'allow' => true,
+            ]
+        ], parent::getAccessRules());
+    }
+
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => ErrorAction::className()
+            ],
+            'page' => [
+                'class' => ViewAction::className(),
+            ]
+        ];
+    }
+
     public function actionIndex()
     {
         return $this->render('index');
-    }
-
-    /**
-     * Renders page
-     * @param $name
-     * @return string
-     * @throws \yii\web\NotFoundHttpException
-     */
-    public function actionPage($name)
-    {
-        $viewFile = $this->findViewFile('pages/'.$name) . '.php';
-        if (file_exists($viewFile))
-            return $this->render('pages/'.$name);
-        else
-            throw new NotFoundHttpException();
     }
 
     public function actionAccessDenied()
