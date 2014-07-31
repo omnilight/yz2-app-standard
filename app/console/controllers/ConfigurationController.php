@@ -12,7 +12,9 @@ use yii\helpers\Console;
 class ConfigurationController extends Controller
 {
     public $migrationPath = [
-        '@yz/migrations', '@yz/admin/migrations',
+        '@yz/migrations',
+        '@yz/admin/migrations',
+        '@migrations',
     ];
 
     public $cookieValidationKeyPath = [
