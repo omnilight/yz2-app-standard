@@ -23,7 +23,8 @@ cd app/bin
 # Init the database with data. You can place here your migrations pathes
 echo "Appling migrations..."
 
-php yii migrate --migrationPath="@yz/migrations" --interactive=0
-php yii migrate --migrationPath="@yz/admin/migrations" --interactive=0
+export APP_ENV=dev
+#php yii migrate --migrationPath="@yz/migrations" --interactive=0
+#php yii migrate --migrationPath="@yz/admin/migrations" --interactive=0
 
 echo "Bootstrap script has been ended"
