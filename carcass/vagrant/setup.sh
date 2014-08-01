@@ -21,10 +21,16 @@ cp /vagrant/carcass/vagrant/app.apache2.conf /etc/apache2/sites-enabled/
 cd app/bin
 
 # Init the database with data. You can place here your migrations pathes
-echo "Appling migrations..."
+echo "Initial configuration..."
 
 export APP_ENV=dev
-#php yii migrate --migrationPath="@yz/migrations" --interactive=0
-#php yii migrate --migrationPath="@yz/admin/migrations" --interactive=0
+php yii configuration/initial --interactive=0
 
-echo "Bootstrap script has been ended"
+echo " "
+echo "***********************************"
+echo "   ADMIN LOGIN:    admin           "
+echo "   ADMIN PASSWORD: password        "
+echo "***********************************"
+echo " "
+
+echo "Bootstrap script has been ended!"

@@ -38,6 +38,13 @@ class ConfigurationController extends Controller
             ]);
         }
 
+        \Yii::$app->runAction('configuration/generate-cookie-key');
+
+        Console::output("All configuration is done!");
+    }
+
+    public function actionGenerateCookieKey()
+    {
         if ($this->confirm("Generate cookieValidationKey?")) {
             foreach ($this->cookieValidationKeyPath as $path) {
                 $key = \Yii::$app->security->generateRandomString(64);
@@ -51,7 +58,5 @@ class ConfigurationController extends Controller
                 Console::output("Generated file ".$path);
             }
         }
-
-        Console::output("All configuration is done!");
     }
 } 
