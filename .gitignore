@@ -1,5 +1,4 @@
 .idea/
 .vagrant/
 app/vendor/
-composer.lock
 web/.devenv
