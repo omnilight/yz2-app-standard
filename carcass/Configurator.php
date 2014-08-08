@@ -16,8 +16,8 @@ class Configurator
     public static function postCreateProject(Event $event)
     {
         $io = $event->getIO();
-        $vagrantVMName = $io->ask("Define name of the vagrant virtual machine name [yz2-app-standard]: ", 'yz2-app-standard');
-        $vagrantServerName = $io->ask("Define name of the vagrant server name [yz2appstandard.dev]: ", 'yz2appstandard.dev');
+        $vagrantVMName = $io->ask("Define name of the vagrant virtual machine [yz2-app-standard]: ", 'yz2-app-standard');
+        $vagrantServerName = $io->ask("Define domain of the vagrant server [yz2appstandard.dev]: ", 'yz2appstandard.dev');
 
         $basedir = dirname(dirname(__FILE__));
 
@@ -29,7 +29,7 @@ class Configurator
                 '#VAGRANT_VM_NAME#' => $vagrantVMName,
             ],
             $apache => [
-                '#VAGRANT_SERVER_NAME#' => $apache,
+                '#VAGRANT_SERVER_NAME#' => $vagrantServerName,
             ]
         ];
 
