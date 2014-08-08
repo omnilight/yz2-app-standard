@@ -112,16 +112,16 @@
         },
         {
             "name": "fortawesome/font-awesome",
-            "version": "v4.0.3",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
                 "shasum": ""
             },
             "require-dev": {
@@ -147,7 +147,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "The iconic font designed for Bootstrap",
+            "description": "The iconic font and CSS framework",
             "homepage": "http://fontawesome.io/",
             "keywords": [
                 "FontAwesome",
@@ -156,7 +156,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2013-11-05 12:35:21"
+            "time": "2014-05-14 20:37:30"
         },
         {
             "name": "omnilight/icons",
@@ -164,16 +164,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/icons.git",
-                "reference": "051103e27007bbe0f7c6667d78e2133d2df65d9c"
+                "reference": "508b0e0a0e0913fb887b8c2e9d2dc8b557afed01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/icons/zipball/051103e27007bbe0f7c6667d78e2133d2df65d9c",
-                "reference": "051103e27007bbe0f7c6667d78e2133d2df65d9c",
+                "url": "https://api.github.com/repos/omnilight/icons/zipball/508b0e0a0e0913fb887b8c2e9d2dc8b557afed01",
+                "reference": "508b0e0a0e0913fb887b8c2e9d2dc8b557afed01",
                 "shasum": ""
             },
             "require": {
-                "fortawesome/font-awesome": "v4.0.3",
+                "fortawesome/font-awesome": "4.*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "dev-master"
             },
@@ -198,7 +198,7 @@
                 "source": "https://github.com/omnilight/icons/tree/master",
                 "issues": "https://github.com/omnilight/icons/issues"
             },
-            "time": "2014-04-24 15:30:27"
+            "time": "2014-08-04 09:36:14"
         },
         {
             "name": "omnilight/yz2",
@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "312852594294b8202d67615d81da670abf618d2b"
+                "reference": "18c712dc083f37db6d8dabbd262d834bc945ba36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/312852594294b8202d67615d81da670abf618d2b",
-                "reference": "312852594294b8202d67615d81da670abf618d2b",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/18c712dc083f37db6d8dabbd262d834bc945ba36",
+                "reference": "18c712dc083f37db6d8dabbd262d834bc945ba36",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "source": "https://github.com/omnilight/yz2-admin/tree/master",
                 "issues": "https://github.com/omnilight/yz2-admin/issues"
             },
-            "time": "2014-07-31 09:42:31"
+            "time": "2014-08-06 14:49:54"
         },
         {
             "name": "omnilight/yz2-gii",
@@ -383,12 +383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "232b61a3ce36831d6167c7e2637d2e4162a9a5a4"
+                "reference": "b4895a0d6dc493f17fe9092db4debe44182d42ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/232b61a3ce36831d6167c7e2637d2e4162a9a5a4",
-                "reference": "232b61a3ce36831d6167c7e2637d2e4162a9a5a4",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/b4895a0d6dc493f17fe9092db4debe44182d42ac",
+                "reference": "b4895a0d6dc493f17fe9092db4debe44182d42ac",
                 "shasum": ""
             },
             "replace": {
@@ -426,7 +426,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-07-31 21:28:32"
+            "time": "2014-08-06 02:28:22"
         },
         {
             "name": "yiisoft/jquery",
@@ -483,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "825a84e15e84f44913120ecd2516fcd503737f91"
+                "reference": "74af29a2f54ca2d636347070fd8aee2e80e65ffc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/825a84e15e84f44913120ecd2516fcd503737f91",
-                "reference": "825a84e15e84f44913120ecd2516fcd503737f91",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/74af29a2f54ca2d636347070fd8aee2e80e65ffc",
+                "reference": "74af29a2f54ca2d636347070fd8aee2e80e65ffc",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +556,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-08-01 17:21:01"
+            "time": "2014-08-08 01:23:53"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -564,12 +564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "83489d3684485543d1fdbe6594da10c3f1f61b85"
+                "reference": "f38dbf3027393a62ad7d30841900ea73340fd31e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/83489d3684485543d1fdbe6594da10c3f1f61b85",
-                "reference": "83489d3684485543d1fdbe6594da10c3f1f61b85",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/f38dbf3027393a62ad7d30841900ea73340fd31e",
+                "reference": "f38dbf3027393a62ad7d30841900ea73340fd31e",
                 "shasum": ""
             },
             "require": {
@@ -597,7 +597,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2014-07-29 22:40:46"
+            "time": "2014-08-07 12:37:48"
         },
         {
             "name": "yiisoft/yii2-composer",

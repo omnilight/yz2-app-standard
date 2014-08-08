@@ -34,11 +34,14 @@ class ConfigurationController extends Controller
 
         foreach ($this->migrationPath as $path) {
             \Yii::$app->runAction('migrate', [
-                'migrationPath' => $path
+                'migrationPath' => $path,
+                'interactive' => $this->interactive ? 1 : 0,
             ]);
         }
 
-        \Yii::$app->runAction('configuration/generate-cookie-key');
+        \Yii::$app->runAction('configuration/generate-cookie-key', [
+            'interactive' => $this->interactive ? 1 : 0,
+        ]);
 
         Console::output("All configuration is done!");
     }
