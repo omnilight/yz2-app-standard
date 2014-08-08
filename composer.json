@@ -31,12 +31,14 @@
             "frontend\\": "app/frontend",
             "backend\\": "app/backend",
             "console\\": "app/console",
-            "modules\\": "app/modules"
+            "modules\\": "app/modules",
+            "yz2app\\carcass\\": "carcass"
         }
     },
     "scripts": {
         "post-create-project-cmd": [
-            "yii\\composer\\Installer::setPermission"
+            "yii\\composer\\Installer::setPermission",
+            "yz2app\\carcass\\Configurator::postCreateProject"
         ]
     },
     "config": {
