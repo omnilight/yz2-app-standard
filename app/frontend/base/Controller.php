@@ -15,7 +15,7 @@ class Controller extends \yii\web\Controller
      */
     private $_accessRules;
 
-    public function attachBehaviors($behaviors)
+    public function behaviors()
     {
         return [
             'access' => [
