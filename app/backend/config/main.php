@@ -21,14 +21,7 @@ return [
             'identityClass' => '\yz\admin\models\User',
             'enableAutoLogin' => false,
             'loginUrl' => ['admin/main/login'],
-            'on afterLogin' => function($event) {
-                    /** @var \yii\web\UserEvent $event */
-                    /** @var \yz\admin\models\User $identity */
-                    $identity = $event->identity;
-                    $identity->updateAttributes([
-                        'logged_at' => new \yii\db\Expression('NOW()'),
-                    ]);
-                }
+            'on afterLogin' => ['\yz\admin\models\User', 'onAfterLoginHandler'],
         ],
         'authManager' => [
             'class' => '\yz\admin\components\AuthManager',
