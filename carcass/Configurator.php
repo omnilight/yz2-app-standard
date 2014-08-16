@@ -10,33 +10,51 @@ use Composer\Script\Event;
  */
 class Configurator
 {
-    const VAGRANTFILE_FILENAME = 'Vagrantfile';
-    const APACHE_VHOST_FILENAME = 'carcass/vagrant/app.apache2.conf';
+    protected static $_questions = [
+        '#vagrantVMName#' => ['Define name of the vagrant virtual machine [#DEFAULT#]: ', 'yz2-app-standard'],
+        '#vagrantDomainName#' => ['Define domain of the vagrant server [#DEFAULT#]: ', 'yz2appstandard.dev'],
+    ];
 
+    protected static $_replacements = [
+        'Vagrantfile' => [
+            '#VAGRANT_VM_NAME#' => '#vagrantVMName#',
+        ],
+        'carcass/vagrant/app.apache2.conf' => [
+            '#VAGRANT_SERVER_NAME#' => '#vagrantDomainName#',
+        ]
+    ];
+
+    /**
+     * Executes after composer's create-project command
+     * @param Event $event
+     */
     public static function postCreateProject(Event $event)
     {
         $io = $event->getIO();
-        $vagrantVMName = $io->ask("Define name of the vagrant virtual machine [yz2-app-standard]: ", 'yz2-app-standard');
-        $vagrantServerName = $io->ask("Define domain of the vagrant server [yz2appstandard.dev]: ", 'yz2appstandard.dev');
 
         $basedir = dirname(dirname(__FILE__));
 
-        $vagrantfile = $basedir . '/' . self::VAGRANTFILE_FILENAME;
-        $apache = $basedir . '/' . self::APACHE_VHOST_FILENAME;
+        $variables = [];
+        foreach (self::$_questions as $varName => $question) {
+            $variables[$varName] = $io->ask(strtr($question[0], [
+                '#DEFAULT#' => $question[1]
+            ]), $question[1]);
+        }
 
-        $replacements = [
-            $vagrantfile => [
-                '#VAGRANT_VM_NAME#' => $vagrantVMName,
-            ],
-            $apache => [
-                '#VAGRANT_SERVER_NAME#' => $vagrantServerName,
-            ]
-        ];
+        foreach (self::$_replacements as $fileName => $replacements) {
+            $realName = $basedir . '/' . $fileName;
+            if (!file_exists($realName)) {
+                $io->write('File ' . $fileName . ' does not exist!');
+                continue;
+            }
 
-        foreach ($replacements as $fileName => $list) {
-            $content = file_get_contents($fileName);
-            $content = strtr($content, $list);
-            file_put_contents($fileName, $content);
+            $replacements = array_combine(array_keys($replacements), array_map(function ($item) use ($variables) {
+                return strtr($item, $variables);
+            }, array_values($replacements)));
+
+            $content = file_get_contents($realName);
+            $content = strtr($content, $replacements);
+            file_put_contents($realName, $content);
         }
     }
 } 
