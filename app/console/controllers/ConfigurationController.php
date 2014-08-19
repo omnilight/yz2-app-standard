@@ -1,6 +1,7 @@
 <?php
 
 namespace console\controllers;
+
 use console\base\Controller;
 use yii\helpers\Console;
 
@@ -58,8 +59,8 @@ class ConfigurationController extends Controller
                     return $matches[1] . $exported . $matches[3];
                 }, $configContent);
                 file_put_contents($file, $configContent);
-                Console::output("Generated file ".$path);
+                Console::output("Generated file " . $path);
             }
         }
     }
-} 
+}
