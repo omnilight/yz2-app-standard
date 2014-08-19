@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "18c712dc083f37db6d8dabbd262d834bc945ba36"
+                "reference": "10244ea9e52f4a9723ea56661c24ed036ea0320a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/18c712dc083f37db6d8dabbd262d834bc945ba36",
-                "reference": "18c712dc083f37db6d8dabbd262d834bc945ba36",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/10244ea9e52f4a9723ea56661c24ed036ea0320a",
+                "reference": "10244ea9e52f4a9723ea56661c24ed036ea0320a",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "source": "https://github.com/omnilight/yz2-admin/tree/master",
                 "issues": "https://github.com/omnilight/yz2-admin/issues"
             },
-            "time": "2014-08-06 14:49:54"
+            "time": "2014-08-16 18:19:39"
         },
         {
             "name": "omnilight/yz2-gii",
@@ -302,12 +302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-gii.git",
-                "reference": "4e79786ad08069c1158b412ca1c6be9c3220da70"
+                "reference": "e284ec40647e993771eb3976a6eaa907dfda6fc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/4e79786ad08069c1158b412ca1c6be9c3220da70",
-                "reference": "4e79786ad08069c1158b412ca1c6be9c3220da70",
+                "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/e284ec40647e993771eb3976a6eaa907dfda6fc6",
+                "reference": "e284ec40647e993771eb3976a6eaa907dfda6fc6",
                 "shasum": ""
             },
             "require": {
@@ -342,7 +342,7 @@
                 "source": "https://github.com/omnilight/yz2-gii/tree/master",
                 "issues": "https://github.com/omnilight/yz2-gii/issues"
             },
-            "time": "2014-05-12 14:50:32"
+            "time": "2014-08-16 17:07:34"
         },
         {
             "name": "phpspec/php-diff",
@@ -383,12 +383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "31f7cb152efbc22ea61801915d81ba2b13435f97"
+                "reference": "c95aa97c03fc676f7b53d002c7c8a3bb59fd6747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/31f7cb152efbc22ea61801915d81ba2b13435f97",
-                "reference": "31f7cb152efbc22ea61801915d81ba2b13435f97",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/c95aa97c03fc676f7b53d002c7c8a3bb59fd6747",
+                "reference": "c95aa97c03fc676f7b53d002c7c8a3bb59fd6747",
                 "shasum": ""
             },
             "replace": {
@@ -426,7 +426,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-08-15 18:52:50"
+            "time": "2014-08-19 03:06:02"
         },
         {
             "name": "yiisoft/jquery",
@@ -483,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "55a21053406f4d63d4c54c16fdbd25caf2ed906e"
+                "reference": "a9ef2f56a074081fe057c157494be88cc1308e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/55a21053406f4d63d4c54c16fdbd25caf2ed906e",
-                "reference": "55a21053406f4d63d4c54c16fdbd25caf2ed906e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a9ef2f56a074081fe057c157494be88cc1308e9c",
+                "reference": "a9ef2f56a074081fe057c157494be88cc1308e9c",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +556,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-08-15 14:04:02"
+            "time": "2014-08-19 14:35:58"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -774,6 +774,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.4.0"
     },
