@@ -3,12 +3,10 @@
 namespace backend\base;
 
 use yii\base\Action;
-use yii\db\ActiveRecord;
 use yii\filters\AccessControl;
 use yii\filters\AccessRule;
-use yii\web\BadRequestHttpException;
 use yz\admin\components\AuthManager;
-
+use yz\admin\components\CrudControllerTrait;
 
 /**
  * Class BackendController
@@ -17,6 +15,8 @@ use yz\admin\components\AuthManager;
  */
 class Controller extends \yii\web\Controller
 {
+    use CrudControllerTrait;
+
     public function behaviors()
     {
         return [
@@ -46,7 +46,6 @@ class Controller extends \yii\web\Controller
         ];
     }
 
-
     /**
      * Checks access to the action of the controller for currently logged user
      * @param AccessRule $rule
@@ -57,33 +56,4 @@ class Controller extends \yii\web\Controller
     {
         return \Yii::$app->user->can(AuthManager::getOperationName($this, $action->id));
     }
-
-    /**
-     * @param ActiveRecord $model
-     * @param array $actions
-     * @throws \yii\web\BadRequestHttpException
-     * @return \yii\web\Response
-     */
-    protected function getCreateUpdateResponse($model, $actions = [])
-    {
-        $defaultActions = [
-            'save_and_stay' => function () use ($model) {
-                    return $this->redirect(['update', 'id' => $model->getPrimaryKey()]);
-                },
-            'save_and_create' => function () use ($model) {
-                    return $this->redirect(['create']);
-                },
-            'save_and_leave' => function () use ($model) {
-                    return $this->redirect(['index']);
-                },
-        ];
-
-        $actions = array_merge($defaultActions, $actions);
-        $actionName = \Yii::$app->request->post('__action', 'save_and_leave');
-
-        if (isset($actions[$actionName]))
-            return call_user_func($actions[$actionName]);
-        else
-            throw new BadRequestHttpException('Unknown action: '.$actionName);
-    }
-} 
+}
