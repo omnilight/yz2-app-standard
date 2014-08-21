@@ -164,12 +164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/icons.git",
-                "reference": "508b0e0a0e0913fb887b8c2e9d2dc8b557afed01"
+                "reference": "06353377029164f934985b869ac7001cf5dfed1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/icons/zipball/508b0e0a0e0913fb887b8c2e9d2dc8b557afed01",
-                "reference": "508b0e0a0e0913fb887b8c2e9d2dc8b557afed01",
+                "url": "https://api.github.com/repos/omnilight/icons/zipball/06353377029164f934985b869ac7001cf5dfed1f",
+                "reference": "06353377029164f934985b869ac7001cf5dfed1f",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
                 "source": "https://github.com/omnilight/icons/tree/master",
                 "issues": "https://github.com/omnilight/icons/issues"
             },
-            "time": "2014-08-04 09:36:14"
+            "time": "2014-08-19 22:08:23"
         },
         {
             "name": "omnilight/yz2",
@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "10244ea9e52f4a9723ea56661c24ed036ea0320a"
+                "reference": "a0049cd3a3e2e19b2aa8edc6eab37ccfdc0a522e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/10244ea9e52f4a9723ea56661c24ed036ea0320a",
-                "reference": "10244ea9e52f4a9723ea56661c24ed036ea0320a",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/a0049cd3a3e2e19b2aa8edc6eab37ccfdc0a522e",
+                "reference": "a0049cd3a3e2e19b2aa8edc6eab37ccfdc0a522e",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "source": "https://github.com/omnilight/yz2-admin/tree/master",
                 "issues": "https://github.com/omnilight/yz2-admin/issues"
             },
-            "time": "2014-08-16 18:19:39"
+            "time": "2014-08-20 12:05:47"
         },
         {
             "name": "omnilight/yz2-gii",
