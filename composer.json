@@ -43,7 +43,7 @@
     },
     "config": {
         "vendor-dir": "app/vendor",
-        "bin-dir": "app/bin"
+        "bin-dir": "app/vendor/bin"
     },
     "bin": ["app/vendor/bin"],
     "extra": {
