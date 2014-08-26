@@ -45,7 +45,7 @@
         "vendor-dir": "app/vendor",
         "bin-dir": "app/bin"
     },
-    "bin": ["app/bin/yii"],
+    "bin": ["app/vendor/bin"],
     "extra": {
         "writable": [
             "app/frontend/runtime",
