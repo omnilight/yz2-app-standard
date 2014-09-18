@@ -10,12 +10,6 @@
         }
     ],
     "type": "project",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://git.zakazpodarka.ru"
-        }
-    ],
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
@@ -54,6 +48,10 @@
         ],
         "executable": [
             "app/bin/yii"
-        ]
+        ],
+        "asset-installer-paths": {
+            "npm-asset-library": "app/vendor/npm",
+            "bower-asset-library": "app/vendor/bower"
+        }
     }
 }
