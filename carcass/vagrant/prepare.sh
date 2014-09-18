@@ -37,6 +37,8 @@ sudo pecl install xdebug
 xdebug=`find / -name "xdebug.so" 2>/dev/null`
 cat /vagrant/carcass/vagrant/xdebug.conf >> /etc/php5/apache2/php.ini
 echo zend_extension="$xdebug" >> /etc/php5/apache2/php.ini
+cat /vagrant/carcass/vagrant/xdebug.conf >> /etc/php5/cli/php.ini
+echo zend_extension="$xdebug" >> /etc/php5/cli/php.ini
 
 # Has to remove default virtual host listening on 80 port (HAS to be done before restarting Apache)
 rm -rf /etc/apache2/sites-enabled/*
