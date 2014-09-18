@@ -31,10 +31,6 @@ return [
                 ],
             ]
         ],
-        'formatter' => [
-            'class' => 'yii\base\Formatter',
-            //'class' => 'yii\i18n\Formatter',
-        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
