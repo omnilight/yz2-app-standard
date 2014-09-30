@@ -23,12 +23,6 @@ class ConfigurationController extends Controller
         '@backend/config/main.php',
     ];
 
-    /**
-     * @var string Regular expression for searching cookie key. Should be in the form
-     * (start_delimiter)(key)(end_delimiter)
-     */
-    public $cookieValidationKeyRegExp = '#(/\* COOKIE_KEY_BEGIN \*/)([^/]*)(/\* COOKIE_KEY_END \*/)#';
-
     public function actionInitial()
     {
         Console::output("Applying migrations...");
@@ -40,10 +34,6 @@ class ConfigurationController extends Controller
             ]);
         }
 
-        \Yii::$app->runAction('configuration/generate-cookie-key', [
-            'interactive' => $this->interactive ? 1 : 0,
-        ]);
-
         Console::output("All configuration is done!");
     }
 
@@ -53,12 +43,8 @@ class ConfigurationController extends Controller
             foreach ($this->cookieValidationKeyPath as $path) {
                 $key = \Yii::$app->security->generateRandomString(64);
                 $file = \Yii::getAlias($path);
-                $exported = var_export($key, true);
-                $configContent = file_get_contents($file);
-                $configContent = preg_replace_callback($this->cookieValidationKeyRegExp, function ($matches) use ($exported) {
-                    return $matches[1] . $exported . $matches[3];
-                }, $configContent);
-                file_put_contents($file, $configContent);
+                $content = preg_replace('/(("|\')cookieValidationKey("|\')\s*=>\s*)(""|\'\')/', "\\1'$key'", file_get_contents($file));
+                file_put_contents($file, $content);
                 Console::output("Generated file " . $path);
             }
         }

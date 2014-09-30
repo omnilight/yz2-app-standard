@@ -5,7 +5,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'components' => [
         'request' => [
-            'cookieValidationKey' => /* COOKIE_KEY_BEGIN */'PUT-KEY-HERE'/* COOKIE_KEY_END */,
+            'cookieValidationKey' => '',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

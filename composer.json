@@ -31,7 +31,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "yii\\composer\\Installer::setPermission",
+            "yii\\composer\\Installer::postCreateProject",
             "yz2app\\carcass\\Configurator::postCreateProject"
         ]
     },
@@ -41,14 +41,22 @@
     },
     "bin": ["app/vendor/bin"],
     "extra": {
-        "writable": [
-            "app/frontend/runtime",
-            "app/backend/runtime",
-            "app/console/runtime"
-        ],
-        "executable": [
-            "app/bin/yii"
-        ],
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "app/frontend/runtime": "0777",
+                    "app/backend/runtime": "0777",
+                    "app/console/runtime": "0777",
+                    "web/assets": "0777",
+                    "web/backend/assets": "0777",
+                    "app/bin/yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "app/frontend/config/main.php",
+                "app/backend/config/main.php"
+            ]
+        },
         "asset-installer-paths": {
             "npm-asset-library": "app/vendor/npm",
             "bower-asset-library": "app/vendor/bower"
