@@ -17,6 +17,9 @@ return [
         'user' => [
             'identityClass' => '\app\models\User',
         ],
+        'assetManager' => [
+            'linkAssets' => true,
+        ]
     ],
     'modules' => [
 

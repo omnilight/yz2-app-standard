@@ -25,6 +25,9 @@ return [
         ],
         'authManager' => [
             'class' => '\yz\admin\components\AuthManager',
+        ],
+        'assetManager' => [
+            'linkAssets' => true,
         ]
     ],
     'modules' => [
