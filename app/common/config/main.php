@@ -6,6 +6,9 @@ return [
     'sourceLanguage' => 'en-US',
     'extensions' => require(YZ_VENDOR_DIR . '/yiisoft/extensions.php'),
     'vendorPath' => YZ_VENDOR_DIR,
+    'bootstrap' => [
+        'log',
+    ],
     'components' => [
         'i18n' => [
             'translations' => [
