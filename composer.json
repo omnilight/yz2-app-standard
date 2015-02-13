@@ -40,7 +40,7 @@
         "vendor-dir": "app/vendor",
         "bin-dir": "app/vendor/bin"
     },
-    "bin": ["app/vendor/bin"],
+    "bin": ["app/bin/yii"],
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
             "setPermission": [
