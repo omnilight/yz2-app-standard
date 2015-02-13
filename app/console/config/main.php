@@ -5,7 +5,7 @@ return [
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [
         'migrate' => [
-            'class' => 'yii\console\controllers\MigrateController',
+            'class' => 'dmstr\console\controllers\MigrateController',
             'migrationTable' => '{{%migrations}}',
         ],
     ],
@@ -16,6 +16,8 @@ return [
 
     ],
     'params' => [
-
+        'yii.migrations' => [
+            '@migrations',
+        ]
     ],
 ];

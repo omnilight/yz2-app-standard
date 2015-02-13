@@ -16,6 +16,7 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
+        "dmstr/yii2-migrate-command": "*",
         "omnilight/yz2": "*",
         "omnilight/yz2-admin": "*",
         "omnilight/yz2-gii": "*"
