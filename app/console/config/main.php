@@ -7,6 +7,7 @@ return [
         'migrate' => [
             'class' => 'dmstr\console\controllers\MigrateController',
             'migrationTable' => '{{%migrations}}',
+            'migrationPath' => '@migrations',
         ],
     ],
     'components' => [
@@ -17,7 +18,6 @@ return [
     ],
     'params' => [
         'yii.migrations' => [
-            '@migrations',
         ]
     ],
 ];
