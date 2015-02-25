@@ -1,3 +1,9 @@
 <?php
 
-return [];
+return [
+    'components' => [
+        'assetManager' => [
+            'linkAssets' => true,
+        ]
+    ]
+];

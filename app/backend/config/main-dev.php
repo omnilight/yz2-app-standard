@@ -2,6 +2,12 @@
 
 return [
     'bootstrap' => ['debug'],
+    'components' => [
+        'assetManager' => [
+            'linkAssets' => false,
+            'forceCopy' => true,
+        ],
+    ],
     'modules' => [
         'gii' => [
             'class' => 'yii\gii\Module',
