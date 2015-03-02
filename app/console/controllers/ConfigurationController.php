@@ -12,12 +12,6 @@ use yii\helpers\Console;
  */
 class ConfigurationController extends Controller
 {
-    public $migrationPath = [
-        '@yz/migrations',
-        '@yz/admin/migrations',
-        '@migrations',
-    ];
-
     public $cookieValidationKeyPath = [
         '@frontend/config/main.php',
         '@backend/config/main.php',
@@ -27,12 +21,9 @@ class ConfigurationController extends Controller
     {
         Console::output("Applying migrations...");
 
-        foreach ($this->migrationPath as $path) {
-            \Yii::$app->runAction('migrate', [
-                'migrationPath' => $path,
-                'interactive' => $this->interactive ? 1 : 0,
-            ]);
-        }
+        \Yii::$app->runAction('migrate', [
+            'interactive' => $this->interactive ? 1 : 0,
+        ]);
 
         Console::output("All configuration is done!");
     }
