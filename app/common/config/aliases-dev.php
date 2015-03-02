@@ -9,5 +9,5 @@ Yii::setAlias('migrations', dirname(dirname(__DIR__)) . '/migrations');
 // Web
 Yii::setAlias('frontendWebroot', dirname(dirname(dirname(__DIR__))) . '/web');
 Yii::setAlias('backendWebroot', dirname(dirname(dirname(__DIR__))) . '/web/backend');
-Yii::setAlias('frontendWeb', 'http://localhost/');
-Yii::setAlias('backendWeb', 'http://localhost/backend');
+Yii::setAlias('frontendWeb', 'http://localhost:8880/');
+Yii::setAlias('backendWeb', 'http://localhost:8880/backend');
