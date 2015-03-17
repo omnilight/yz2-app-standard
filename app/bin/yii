@@ -31,6 +31,6 @@ $config = \yii\helpers\ArrayHelper::merge(
     require(YZ_APP_DIR . '/console/config/main-'.YII_ENV.'.php')
 );
 
-$application = new yii\console\Application($config);
+$application = new \console\base\Application($config);
 $exitCode = $application->run();
 exit($exitCode);

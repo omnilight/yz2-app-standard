@@ -27,5 +27,5 @@ $config = \yii\helpers\ArrayHelper::merge(
     require(YZ_APP_DIR . '/backend/config/main-'.YII_ENV.'.php')
 );
 
-$application = new yii\web\Application($config);
+$application = new \backend\base\Application($config);
 $application->run();
