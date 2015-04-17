@@ -1,66 +1,72 @@
 {
-    "name": "omnilight/yz2-app-standard",
-    "description": "Standard application based on Yii2 and Yz2",
-    "keywords": ["yii", "framework", "yz", "application template"],
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "Pavel Agalecky",
-            "email": "pavel.agalecky@gmail.com"
-        }
-    ],
-    "type": "project",
-    "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "2.0.*",
-        "yiisoft/yii2-bootstrap": "2.0.*",
-        "yiisoft/yii2-debug": "2.0.*",
-        "yiisoft/yii2-gii": "2.0.*",
-        "dmstr/yii2-migrate-command": "*",
-        "omnilight/yz2": "*",
-        "omnilight/yz2-admin": "*",
-        "omnilight/yz2-gii": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "frontend\\": "app/frontend",
-            "backend\\": "app/backend",
-            "console\\": "app/console",
-            "modules\\": "app/modules",
-            "yz2app\\carcass\\": "carcass"
-        }
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject",
-            "yz2app\\carcass\\Configurator::postCreateProject"
-        ]
-    },
-    "config": {
-        "vendor-dir": "app/vendor",
-        "bin-dir": "app/vendor/bin"
-    },
-    "bin": ["app/bin/yii"],
-    "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-            "setPermission": [
-                {
-                    "app/frontend/runtime": "0777",
-                    "app/backend/runtime": "0777",
-                    "app/console/runtime": "0777",
-                    "web/assets": "0777",
-                    "web/backend/assets": "0777",
-                    "app/bin/yii": "0755"
-                }
-            ],
-            "generateCookieValidationKey": [
-                "app/frontend/config/main.php",
-                "app/backend/config/main.php"
-            ]
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "app/vendor/npm",
-            "bower-asset-library": "app/vendor/bower"
-        }
+  "name": "omnilight/yz2-app-standard",
+  "description": "Standard application based on Yii2 and Yz2",
+  "keywords": [
+    "yii",
+    "framework",
+    "yz",
+    "application template"
+  ],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Pavel Agalecky",
+      "email": "pavel.agalecky@gmail.com"
     }
+  ],
+  "type": "project",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2-bootstrap": "2.0.*",
+    "yiisoft/yii2-debug": "2.0.*",
+    "yiisoft/yii2-gii": "2.0.*",
+    "dmstr/yii2-migrate-command": "*",
+    "vlucas/phpdotenv": "1.1.*",
+    "omnilight/yz2": "*",
+    "omnilight/yz2-admin": "*",
+    "omnilight/yz2-gii": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "frontend\\": "app/frontend",
+      "backend\\": "app/backend",
+      "console\\": "app/console",
+      "modules\\": "app/modules",
+      "yz2app\\carcass\\": "carcass"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject",
+      "yz2app\\carcass\\Configurator::postCreateProject"
+    ]
+  },
+  "config": {
+    "vendor-dir": "app/vendor",
+    "bin-dir": "app/vendor/bin"
+  },
+  "bin": ["app/bin/yii"],
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "app/frontend/runtime": "0777",
+          "app/backend/runtime": "0777",
+          "app/console/runtime": "0777",
+          "web/assets": "0777",
+          "web/backend/assets": "0777",
+          "app/bin/yii": "0755"
+        }
+      ],
+      "generateCookieValidationKey": [
+        "app/frontend/config/main.php",
+        "app/backend/config/main.php"
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "app/vendor/npm",
+      "bower-asset-library": "app/vendor/bower"
+    }
+  }
 }
