@@ -1,7 +1,8 @@
 <?php
 
-define('YZ_APP_DIR', __DIR__.'/../../app');
-define('YZ_VENDOR_DIR',__DIR__.'/../../app/vendor');
+define('YZ_BASE_DIR',  __DIR__.'/../../');
+define('YZ_APP_DIR', YZ_BASE_DIR . '/app');
+define('YZ_VENDOR_DIR', YZ_BASE_DIR . '/app/vendor');
 
 require(YZ_VENDOR_DIR . '/autoload.php');
 require(YZ_APP_DIR . '/common/config/env.php');
