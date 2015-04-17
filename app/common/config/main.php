@@ -10,6 +10,14 @@ return [
         'log',
     ],
     'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'charset' => 'utf8',
+            'dsn' => getenv('DATABASE_DSN'),
+            'username' => getenv('DATABASE_USER'),
+            'password' => getenv('DATABASE_PASSWORD'),
+            'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
+        ],
         'i18n' => [
             'translations' => [
                 'common' => [

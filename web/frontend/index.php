@@ -1,21 +1,14 @@
 <?php
-defined('YII_ENV') || define('YII_ENV', getenv('APP_ENV')?:'prod');
-defined('YII_DEBUG') || define('YII_DEBUG', YII_ENV == 'dev');
 
-switch (YII_ENV) {
-    case 'dev':
-        define('YZ_APP_DIR', __DIR__.'/../../app');
-        define('YZ_VENDOR_DIR',__DIR__.'/../../app/vendor');
-        break;
-    case 'prod':
-        define('YZ_APP_DIR', __DIR__.'/../../app');
-        define('YZ_VENDOR_DIR',__DIR__.'/../../app/vendor');
-        break;
-    default:
-        throw new Exception("Unknown YII_ENV: ".YII_ENV);
-}
+define('YZ_APP_DIR', __DIR__.'/../../app');
+define('YZ_VENDOR_DIR',__DIR__.'/../../app/vendor');
 
 require(YZ_VENDOR_DIR . '/autoload.php');
+require(YZ_APP_DIR . '/common/config/env.php');
+
+defined('YII_ENV') || define('YII_ENV', getenv('YII_ENV'));
+defined('YII_DEBUG') || define('YII_DEBUG', getenv('YII_DEBUG'));
+
 require(YZ_VENDOR_DIR . '/yiisoft/yii2/Yii.php');
 require(YZ_APP_DIR . '/common/config/bootstrap.php');
 require(YZ_APP_DIR . '/frontend/config/bootstrap.php');

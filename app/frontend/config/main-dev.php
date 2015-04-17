@@ -5,7 +5,7 @@ return [
     'components' => [
         'assetManager' => [
             'linkAssets' => false,
-            'forceCopy' => true,
+            'forceCopy' => false,
         ],
     ],
     'modules' => [
