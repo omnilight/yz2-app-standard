@@ -25,6 +25,5 @@ $config = \yii\helpers\ArrayHelper::merge(
 );
 
 $application = new \console\base\Application($config);
-$application->run();
-
+$exitCode = $application->run();
 exit($exitCode);
