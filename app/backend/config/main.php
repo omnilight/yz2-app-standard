@@ -26,6 +26,9 @@ return [
         'authManager' => [
             'class' => '\yz\admin\components\AuthManager',
         ],
+        'errorHandler' => [
+            'errorAction' => 'admin/main/error',
+        ],
     ],
     'modules' => [
         'admin' => [

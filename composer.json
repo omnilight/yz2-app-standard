@@ -33,8 +33,7 @@
       "frontend\\": "app/frontend",
       "backend\\": "app/backend",
       "console\\": "app/console",
-      "modules\\": "app/modules",
-      "yz2app\\carcass\\": "carcass"
+      "modules\\": "app/modules"
     }
   },
   "scripts": {

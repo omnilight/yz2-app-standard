@@ -7,7 +7,7 @@ app:
     - .:/app
 
 cli:
-  image: loyalty/php:5.6-cli
+  image: yz2app/php:5.6-cli
   links:
     - db
   volumes_from:
@@ -18,7 +18,7 @@ cli:
 
 
 fpm:
-  image: loyalty/php:5.6-fpm
+  image: yz2app/php:5.6-fpm
   links:
     - db
   volumes_from:
@@ -30,7 +30,7 @@ fpm:
 
 # The nginx server for serving static files directly, cached contents via the memcached server and php files via the php service
 frontend:
-  image: loyalty/nginx:1.7
+  image: yz2app/nginx:1.7
   links:
     - fpm
   volumes_from:
@@ -47,7 +47,7 @@ frontend:
 
 # The nginx server for serving static files directly, cached contents via the memcached server and php files via the php service
 backend:
-  image: loyalty/nginx:1.7
+  image: yz2app/nginx:1.7
   links:
     - fpm
   volumes_from:
