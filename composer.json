@@ -59,6 +59,7 @@
           "web/backend/assets": "0777",
           "web/frontend/media": "0777",
           "web/backend/media": "0777",
+          "data": "0777",
           "app/bin/yii": "0755"
         }
       ],
@@ -71,8 +72,5 @@
       "npm-asset-library": "app/vendor/npm",
       "bower-asset-library": "app/vendor/bower"
     }
-  },
-  "config": {
-    "process-timeout": 1800
   }
 }
