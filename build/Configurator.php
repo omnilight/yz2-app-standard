@@ -12,8 +12,8 @@ class Configurator
 {
     protected static $_questions = [
         '#vagrantVMName#' => ['Define name of the vagrant virtual machine [#DEFAULT#]: ', 'yz2app'],
-        '#frontendHost#' => ['Define frontend host [#DEFAULT#]: ', 'yz2app'],
-        '#backendHost#' => ['Define backend host [#DEFAULT#]: ', 'backend.yz2app'],
+        '#frontendHost#' => ['Define frontend host [#DEFAULT#]: ', 'yz2app.192.168.7.6.xip.io'],
+        '#backendHost#' => ['Define backend host [#DEFAULT#]: ', 'backend.yz2app.192.168.7.6.xip.io'],
     ];
 
     protected static $_replacements = [
@@ -21,6 +21,10 @@ class Configurator
             '#VAGRANT_VM_NAME#' => '#vagrantVMName#',
         ],
         'build/vagrant/configs/nginx.conf' => [
+            '#FRONTEND_HOST#' => '#frontendHost#',
+            '#BACKEND_HOST#' => '#backendHost#',
+        ],
+        '.env-dist' => [
             '#FRONTEND_HOST#' => '#frontendHost#',
             '#BACKEND_HOST#' => '#backendHost#',
         ],

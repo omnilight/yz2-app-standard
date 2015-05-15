@@ -57,5 +57,7 @@ service mysql restart
 # Configure application
 cd /vagrant/app/bin
 
+echo "Appling migrations"
 php yii migrate --interactive=0
+echo "Creating default admin"
 php yii admin-users/create-default-admin
