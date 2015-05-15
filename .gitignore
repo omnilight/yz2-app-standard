@@ -1,4 +1,4 @@
-.idea/
-.vagrant/
-app/vendor/
+.idea
+.vagrant
+app/vendor
 .env

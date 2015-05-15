@@ -33,13 +33,14 @@
       "frontend\\": "app/frontend",
       "backend\\": "app/backend",
       "console\\": "app/console",
-      "modules\\": "app/modules"
+      "modules\\": "app/modules",
+      "yz2app\\build\\": "build"
     }
   },
   "scripts": {
     "post-create-project-cmd": [
       "yii\\composer\\Installer::postCreateProject",
-      "yz2app\\carcass\\Configurator::postCreateProject"
+      "yz2app\\build\\Configurator::postCreateProject"
     ]
   },
   "config": {
