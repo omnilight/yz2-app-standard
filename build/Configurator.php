@@ -1,6 +1,6 @@
 <?php
 
-namespace yz2app\carcass;
+namespace yz2app\build;
 
 use Composer\Script\Event;
 
