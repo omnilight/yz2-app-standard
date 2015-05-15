@@ -26,6 +26,7 @@
   },
   "require-dev": {
     "yiisoft/yii2-debug": "2.*",
+    "yiisoft/yii2-gii": "2.*",
     "omnilight/yz2-gii": "*"
   },
   "autoload": {
