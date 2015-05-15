@@ -27,7 +27,6 @@ class Configurator
     public static function postCreateProject(Event $event)
     {
         self::configureVariables($event);
-        self::
     }
 
     protected static function configureVariables(Event $event)
