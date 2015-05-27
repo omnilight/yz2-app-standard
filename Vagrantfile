@@ -1,14 +1,3 @@
-# Docker containers
-# -----------------
-
-# Loading config from docker-compose
-require "yaml"
-dc = YAML.load(File.open(File.join(File.dirname(__FILE__), "docker-compose.yml"), File::RDONLY).read)
-
-# Note to OS X and Windows users: The forwarded ports are available on your dockerhost-vm.
-
-# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
-
 
 VAGRANTFILE_API_VERSION = "2"
 
