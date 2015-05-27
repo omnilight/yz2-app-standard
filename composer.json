@@ -48,7 +48,7 @@
     "vendor-dir": "app/vendor",
     "bin-dir": "app/vendor/bin"
   },
-  "bin": ["app/bin/yii"],
+  "bin": ["yii"],
   "extra": {
     "yii\\composer\\Installer::postCreateProject": {
       "setPermission": [
@@ -61,7 +61,7 @@
           "web/frontend/media": "0777",
           "web/backend/media": "0777",
           "data": "0777",
-          "app/bin/yii": "0755"
+          "yii": "0755"
         }
       ],
       "generateCookieValidationKey": [
