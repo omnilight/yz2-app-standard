@@ -43,13 +43,30 @@ use yii\widgets\Breadcrumbs;
         NavBar::end();
         ?>
 
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="<?= Url::home() ?>">
+                        My Company
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="<?= Url::home() ?>">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<?= Url::to('/auth/login') ?>">Вход</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
             <?= Alerts::widget() ?>
-            <?= $content ?>
         </div>
+
+        <?= $content ?>
     </div>
 
     <footer class="footer">
