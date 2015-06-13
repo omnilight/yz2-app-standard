@@ -4,8 +4,8 @@
 sudo apt-get update
 
 # Preparing answers for automatic install
-debconf-set-selections <<< "mysql-server mysql-server/root_password password yz2app"
-debconf-set-selections <<< "mysql-server mysql-server/root_password_again password yz2app"
+debconf-set-selections <<< "mysql-server mysql-server/root_password password root"
+debconf-set-selections <<< "mysql-server mysql-server/root_password_again password root"
 
 # Install libraries
 apt-get install -y \
@@ -43,7 +43,7 @@ chmod +x /usr/local/bin/docker-compose
 cd /vagrant
 
 # Creating database
-mysql -u root -pyz2app -e "create database if not exists yz2app";
+mysql -u root -proot -e "create database if not exists yz2app";
 
 # Configuring nginx
 rm /etc/nginx/sites-available/default
