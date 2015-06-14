@@ -9,6 +9,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Change ip of the machine to make it available via xip.io
     config.vm.network "private_network", ip: "192.168.7.6", netmask: "255.255.255.0"
+    # Use nfs to speed up
+    config.vm.synced_folder '.', '/vagrant', nfs: true
 
     config.vm.provider :virtualbox do |virtualbox|
         virtualbox.customize ["modifyvm", :id, "--name", "#VAGRANT_VM_NAME#"]
