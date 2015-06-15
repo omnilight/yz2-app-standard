@@ -13,7 +13,7 @@ class Configurator
     protected static $_questions = [
         '#vagrantVMName#' => ['Define name of the vagrant virtual machine [#DEFAULT#]: ', 'yz2app'],
         '#frontendHost#' => ['Define frontend host [#DEFAULT#]: ', 'yz2app.192.168.7.6.xip.io'],
-        '#backendHost#' => ['Define backend host [#DEFAULT#]: ', 'backend.#frontendHost#s'],
+        '#backendHost#' => ['Define backend host [#DEFAULT#]: ', 'backend.#frontendHost#'],
     ];
 
     protected static $_replacements = [
@@ -47,9 +47,9 @@ class Configurator
 
         $variables = [];
         foreach (self::$_questions as $varName => $question) {
-            $variables[$varName] = $io->ask(strtr($question[0], [
+            $variables[$varName] = strtr($io->ask(strtr($question[0], [
                 '#DEFAULT#' => isset($question[1]) ? strtr($question[1], $variables) : '',
-            ]), $question[1]);
+            ]), $question[1]), $variables);
         }
 
         foreach (self::$_replacements as $fileName => $replacements) {
