@@ -24,26 +24,7 @@ use yii\widgets\Breadcrumbs;
     <body>
     <?php $this->beginBody() ?>
     <div class="wrap">
-        <?php
-        NavBar::begin([
-            'brandLabel' => 'My Company',
-            'brandUrl' => Yii::$app->homeUrl,
-            'options' => [
-                'class' => 'navbar-inverse navbar-fixed-top',
-            ],
-        ]);
-        $menuItems = [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/page','name'=>'about']],
-        ];
-        echo Nav::widget([
-            'options' => ['class' => 'navbar-nav navbar-right'],
-            'items' => $menuItems,
-        ]);
-        NavBar::end();
-        ?>
-
-        <div class="navbar">
+        <div class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?= Url::home() ?>">
