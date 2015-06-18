@@ -29,10 +29,15 @@ Yii::setAlias('backendWeb', getenv('BACKEND_WEB'));
 
 
 /**
- * Configuration of the dependency injector container (DI)
- *
+ * Dependency injections
  */
 
 
-// Example:
 //Yii::$container->set('acme\DummyInterface', 'acme\DummyClass');
+
+
+/**
+ * Event handlers
+ */
+
+//\yii\base\Event::on(SomeClass::class, 'onEvent', [SomeListener::class, 'whenEvent']);
