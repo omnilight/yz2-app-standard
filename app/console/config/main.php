@@ -5,7 +5,7 @@ return [
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [
         'migrate' => [
-            'class' => 'dmstr\console\controllers\MigrateController',
+            'class' => dmstr\console\controllers\MigrateController::class,
             'migrationTable' => '{{%migrations}}',
             'migrationPath' => '@migrations',
         ],

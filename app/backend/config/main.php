@@ -24,7 +24,7 @@ return [
             'on afterLogin' => ['\yz\admin\models\User', 'onAfterLoginHandler'],
         ],
         'authManager' => [
-            'class' => '\yz\admin\components\AuthManager',
+            'class' => \yz\admin\components\AuthManager::class,
         ],
         'errorHandler' => [
             'errorAction' => 'admin/main/error',
@@ -32,7 +32,7 @@ return [
     ],
     'modules' => [
         'admin' => [
-            'class' => '\yz\admin\Module',
+            'class' => \yz\admin\Module::class,
         ]
     ],
     'params' => [

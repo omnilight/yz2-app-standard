@@ -11,7 +11,7 @@ return [
     ],
     'components' => [
         'db' => [
-            'class' => 'yii\db\Connection',
+            'class' => yii\db\Connection::class,
             'charset' => 'utf8',
             'dsn' => getenv('DATABASE_DSN'),
             'username' => getenv('DATABASE_USER'),
@@ -21,22 +21,22 @@ return [
         'i18n' => [
             'translations' => [
                 'common' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
+                    'class' => yii\i18n\PhpMessageSource::class,
                     'basePath' => '@common/messages',
                     'sourceLanguage' => 'en-US',
                 ],
                 'frontend' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
+                    'class' => yii\i18n\PhpMessageSource::class,
                     'basePath' => '@frontend/messages',
                     'sourceLanguage' => 'en-US',
                 ],
                 'backend' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
+                    'class' => yii\i18n\PhpMessageSource::class,
                     'basePath' => '@backend/messages',
                     'sourceLanguage' => 'en-US',
                 ],
                 'console' => [
-                    'class' => 'yii\i18n\PhpMessageSource',
+                    'class' => yii\i18n\PhpMessageSource::class,
                     'basePath' => '@console/messages',
                     'sourceLanguage' => 'en-US',
                 ],
@@ -46,7 +46,7 @@ return [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => yii\log\FileTarget::class,
                     'levels' => ['error', 'warning', 'trace'],
                 ],
             ],
