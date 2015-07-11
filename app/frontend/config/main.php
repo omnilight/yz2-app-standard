@@ -5,7 +5,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => getenv('FRONTEND_COOKIE_VALIDATION_KEY'),
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

@@ -13,10 +13,10 @@ return [
         'db' => [
             'class' => yii\db\Connection::class,
             'charset' => 'utf8',
-            'dsn' => getenv('DATABASE_DSN'),
-            'username' => getenv('DATABASE_USER'),
-            'password' => getenv('DATABASE_PASSWORD'),
-            'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
+            'dsn' => getenv('DB_DSN'),
+            'username' => getenv('DB_USER'),
+            'password' => getenv('DB_PASSWORD'),
+            'tablePrefix' => getenv('DB_TABLE_PREFIX'),
         ],
         'i18n' => [
             'translations' => [
