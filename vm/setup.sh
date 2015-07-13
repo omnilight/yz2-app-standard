@@ -34,6 +34,7 @@ if ! grep --quiet '^xdebug.remote_enable = on$' /etc/php5/mods-available/xdebug.
      echo "xdebug.remote_enable = on";
      echo "xdebug.remote_connect_back = on";
      echo "xdebug.remote_host = 192.168.7.1";
+     echo "xdebug.idekey = \"PHPSTORM\"";
     ) >> /etc/php5/mods-available/xdebug.ini
 fi
 
