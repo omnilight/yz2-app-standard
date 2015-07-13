@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dcf7c0c00aa6820cd8ab85802f372692",
+    "hash": "580d712c4c5ff2428ed1aa01d6163c7c",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
                 "shasum": ""
             },
             "require": {
@@ -27,13 +27,7 @@
             "extra": {
                 "bower-asset-main": [
                     "less/bootstrap.less",
-                    "dist/css/bootstrap.css",
-                    "dist/js/bootstrap.js",
-                    "dist/fonts/glyphicons-halflings-regular.eot",
-                    "dist/fonts/glyphicons-halflings-regular.svg",
-                    "dist/fonts/glyphicons-halflings-regular.ttf",
-                    "dist/fonts/glyphicons-halflings-regular.woff",
-                    "dist/fonts/glyphicons-halflings-regular.woff2"
+                    "dist/js/bootstrap.js"
                 ],
                 "bower-asset-ignore": [
                     "/.*",
@@ -46,6 +40,9 @@
                     "test-infra"
                 ]
             },
+            "license": [
+                "MIT"
+            ],
             "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
             "keywords": [
                 "css",
@@ -89,6 +86,41 @@
                 "Apache-2.0"
             ],
             "time": "2015-03-26 11:54:21"
+        },
+        {
+            "name": "bower-asset/bootstrap-daterangepicker",
+            "version": "v1.3.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dangrossman/bootstrap-daterangepicker.git",
+                "reference": "76364ce83b0cf65a09d99546eff25a0ea0163f1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dangrossman/bootstrap-daterangepicker/zipball/76364ce83b0cf65a09d99546eff25a0ea0163f1a",
+                "reference": "76364ce83b0cf65a09d99546eff25a0ea0163f1a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.10",
+                "bower-asset/moment": "~2.8.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "daterangepicker.js",
+                    "daterangepicker-bs3.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests",
+                    "moment.js",
+                    "moment.min.js"
+                ]
+            }
         },
         {
             "name": "bower-asset/font-awesome",
@@ -247,6 +279,40 @@
                 "mask",
                 "plugins"
             ]
+        },
+        {
+            "name": "bower-asset/moment",
+            "version": "2.8.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moment/moment.git",
+                "reference": "2f9b330eb35a38184fd7239749c7f0feef6c5146"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moment/moment/zipball/2f9b330eb35a38184fd7239749c7f0feef6c5146",
+                "reference": "2f9b330eb35a38184fd7239749c7f0feef6c5146",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "moment.js",
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests",
+                    "tasks",
+                    "component.json",
+                    "composer.json",
+                    "CONTRIBUTING.md",
+                    "ender.js",
+                    "Gruntfile.js",
+                    "package.js",
+                    "package.json"
+                ]
+            }
         },
         {
             "name": "bower-asset/punycode",
@@ -530,12 +596,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yii2-bootstrap-datepicker.git",
-                "reference": "b091e233d35467ad4ee156fb2808500c1b7528ff"
+                "reference": "08a2c1bc471a191219195e712568de92ec917661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yii2-bootstrap-datepicker/zipball/b091e233d35467ad4ee156fb2808500c1b7528ff",
-                "reference": "b091e233d35467ad4ee156fb2808500c1b7528ff",
+                "url": "https://api.github.com/repos/omnilight/yii2-bootstrap-datepicker/zipball/08a2c1bc471a191219195e712568de92ec917661",
+                "reference": "08a2c1bc471a191219195e712568de92ec917661",
                 "shasum": ""
             },
             "require": {
@@ -563,7 +629,94 @@
                 "picker",
                 "yii2"
             ],
-            "time": "2015-04-01 16:43:03"
+            "time": "2015-06-24 10:11:57"
+        },
+        {
+            "name": "omnilight/yii2-bootstrap-daterangepicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/omnilight/yii2-bootstrap-daterangepicker.git",
+                "reference": "c78aeb30226af2e2a35d77b5c4123810ac9c3bb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/omnilight/yii2-bootstrap-daterangepicker/zipball/c78aeb30226af2e2a35d77b5c4123810ac9c3bb0",
+                "reference": "c78aeb30226af2e2a35d77b5c4123810ac9c3bb0",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap-daterangepicker": "1.3.17",
+                "omnilight/yii2-momentjs": "*",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "omnilight\\daterangepicker\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "omnilight\\assets\\": "",
+                    "omnilight\\widgets\\": "",
+                    "omnilight\\daterangepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pavel Agalecky",
+                    "email": "pavel.agalecky@gmail.com"
+                }
+            ],
+            "description": "Date range picker component for Bootstrap for Yii2 framework",
+            "keywords": [
+                "date",
+                "picker",
+                "range",
+                "yii2"
+            ],
+            "time": "2015-07-01 17:08:30"
+        },
+        {
+            "name": "omnilight/yii2-momentjs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/omnilight/yii2-momentjs.git",
+                "reference": "b4c4b232f76e342235ec8015be68e791b7421029"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/omnilight/yii2-momentjs/zipball/b4c4b232f76e342235ec8015be68e791b7421029",
+                "reference": "b4c4b232f76e342235ec8015be68e791b7421029",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/moment": "*",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "omnilight\\assets\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pavel Agalecky",
+                    "email": "pavel.agalecky@gmail.com"
+                }
+            ],
+            "description": "Moment.js asset for Yii2 framework",
+            "keywords": [
+                "moment",
+                "momentjs",
+                "yii2"
+            ],
+            "time": "2015-02-23 11:33:26"
         },
         {
             "name": "omnilight/yz2",
@@ -614,17 +767,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "7c4fdf56df65719e77ec9dde11e803b1bd32db06"
+                "reference": "9caef634743458150a12e1c9135cb3f4033a2fa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/7c4fdf56df65719e77ec9dde11e803b1bd32db06",
-                "reference": "7c4fdf56df65719e77ec9dde11e803b1bd32db06",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/9caef634743458150a12e1c9135cb3f4033a2fa7",
+                "reference": "9caef634743458150a12e1c9135cb3f4033a2fa7",
                 "shasum": ""
             },
             "require": {
                 "omnilight/icons": "*",
                 "omnilight/yii2-bootstrap-datepicker": "*",
+                "omnilight/yii2-bootstrap-daterangepicker": "*",
                 "omnilight/yz2": "*",
                 "php": ">=5.4.0",
                 "vova07/yii2-select2-widget": "*",
@@ -655,7 +809,7 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-06-03 10:12:36"
+            "time": "2015-07-09 11:37:01"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -776,12 +930,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "a0772d118275c9edfba90010fb750e0ad45777f5"
+                "reference": "d2ca1acda268531da9b5a4c82ce01d0cdd682348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a0772d118275c9edfba90010fb750e0ad45777f5",
-                "reference": "a0772d118275c9edfba90010fb750e0ad45777f5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d2ca1acda268531da9b5a4c82ce01d0cdd682348",
+                "reference": "d2ca1acda268531da9b5a4c82ce01d0cdd682348",
                 "shasum": ""
             },
             "require": {
@@ -856,7 +1010,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-06-11 22:55:12"
+            "time": "2015-07-12 21:45:55"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -864,12 +1018,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "0396fafd62d30dbf83e5f56cc72536ed5ce1d63e"
+                "reference": "56d47544eb98ebdb542422abc598ef8097b3e9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/0396fafd62d30dbf83e5f56cc72536ed5ce1d63e",
-                "reference": "0396fafd62d30dbf83e5f56cc72536ed5ce1d63e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/56d47544eb98ebdb542422abc598ef8097b3e9c5",
+                "reference": "56d47544eb98ebdb542422abc598ef8097b3e9c5",
                 "shasum": ""
             },
             "require": {
@@ -906,7 +1060,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-06-04 11:00:16"
+            "time": "2015-06-23 17:21:52"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -1119,12 +1273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "b9bbead8f827a0eae1dad69e52ad322450a9381b"
+                "reference": "1d2f8519c78c557b3d28f647a6bacfad1d6720f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/b9bbead8f827a0eae1dad69e52ad322450a9381b",
-                "reference": "b9bbead8f827a0eae1dad69e52ad322450a9381b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/1d2f8519c78c557b3d28f647a6bacfad1d6720f8",
+                "reference": "1d2f8519c78c557b3d28f647a6bacfad1d6720f8",
                 "shasum": ""
             },
             "require": {
@@ -1158,7 +1312,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-06-11 09:39:28"
+            "time": "2015-06-24 10:53:39"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -1166,12 +1320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "bc7df9d8fa44b3308cc899ffc8e4204316304e41"
+                "reference": "4b5864ed17471e558eacde1a0e1095113486349f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/bc7df9d8fa44b3308cc899ffc8e4204316304e41",
-                "reference": "bc7df9d8fa44b3308cc899ffc8e4204316304e41",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/4b5864ed17471e558eacde1a0e1095113486349f",
+                "reference": "4b5864ed17471e558eacde1a0e1095113486349f",
                 "shasum": ""
             },
             "require": {
@@ -1211,7 +1365,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-06-07 17:22:13"
+            "time": "2015-07-09 08:22:23"
         }
     ],
     "aliases": [],
