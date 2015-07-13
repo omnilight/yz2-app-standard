@@ -2,3 +2,4 @@
 .vagrant
 app/vendor
 .env
+vagrant.yaml
