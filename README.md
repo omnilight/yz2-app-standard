@@ -1,13 +1,20 @@
 
-Standard application for development
-====================================
+Standard application based on Yii2 framework
+============================================
 
-## Directory structure
+This application is intended to be used as a start for application development
+using Yii2 framework and Yz2 extensions.
 
-app - application code \
-build - virtual machine config for running application of the local machine \
-data - place to store all private data of the application \
-web/frontend - frontend web root \
-web/frontend/media - place to store all public data of the frontend application \
-web/backend - backend web root
-web/backend/media - place to store all public data of the backend application \
+This application incldues:
+
+- yz2-admin
+- yz2-gii
+- vagrant config
+
+After downloading application you should do the following:
+
+* Install Virtualbox + vagrant
+* Copy `vagrant.yaml.dist` to `vagrant.yaml`
+* Run vagrant.up
+
+You can also configure vagrant domain in vagrant.yaml
