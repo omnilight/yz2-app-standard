@@ -1,7 +1,9 @@
 
 VAGRANTFILE_API_VERSION = "2"
-
 Vagrant.require_version ">= 1.7.0"
+
+require 'yaml'
+options = YAML.load_file File.join(File.dirname(__FILE__), 'vagrant.yaml')
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
@@ -20,6 +22,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         virtualbox.customize ["setextradata", :id, "--VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
     end
 
-    config.vm.provision :shell, :path => "build/vagrant/setup.sh"
-    config.vm.provision :shell, :path => "build/vagrant/run.sh", run: "always"
+    config.vm.provision :shell, :path => "vm/setup.sh", args: [
+        options['hosts']['frontend'],
+        options['hosts']['backend']
+    ]
+    config.vm.provision :shell, :path => "vm/run.sh", run: "always"
 end
