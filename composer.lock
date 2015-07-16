@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "580d712c4c5ff2428ed1aa01d6163c7c",
+    "hash": "6ecf2d8e23181fa8a59be2ccf99bab1f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -724,12 +724,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2.git",
-                "reference": "80bc2a3e8a8426f3eea7ef61d5a6f9913340759a"
+                "reference": "1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2/zipball/80bc2a3e8a8426f3eea7ef61d5a6f9913340759a",
-                "reference": "80bc2a3e8a8426f3eea7ef61d5a6f9913340759a",
+                "url": "https://api.github.com/repos/omnilight/yz2/zipball/1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad",
+                "reference": "1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +759,7 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-04-01 16:43:04"
+            "time": "2015-07-13 11:20:35"
         },
         {
             "name": "omnilight/yz2-admin",
@@ -767,12 +767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "9caef634743458150a12e1c9135cb3f4033a2fa7"
+                "reference": "5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/9caef634743458150a12e1c9135cb3f4033a2fa7",
-                "reference": "9caef634743458150a12e1c9135cb3f4033a2fa7",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342",
+                "reference": "5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-07-09 11:37:01"
+            "time": "2015-07-15 10:51:30"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -817,12 +817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "ae388efe53a2c352ddd270f4d316bad58952b8e3"
+                "reference": "88eca3838807107c3b1c358a8e94f4f7c2d91fa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/ae388efe53a2c352ddd270f4d316bad58952b8e3",
-                "reference": "ae388efe53a2c352ddd270f4d316bad58952b8e3",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/88eca3838807107c3b1c358a8e94f4f7c2d91fa0",
+                "reference": "88eca3838807107c3b1c358a8e94f4f7c2d91fa0",
                 "shasum": ""
             },
             "require": {
@@ -834,12 +834,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Dotenv": "src/"
+                "psr-4": {
+                    "Dotenv\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -860,7 +860,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-02-19 20:37:05"
+            "time": "2015-07-14 10:17:41"
         },
         {
             "name": "vova07/yii2-select2-widget",
@@ -930,12 +930,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "d2ca1acda268531da9b5a4c82ce01d0cdd682348"
+                "reference": "99ea3bbf448bd74efe0f3916018b81a8e57f91dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d2ca1acda268531da9b5a4c82ce01d0cdd682348",
-                "reference": "d2ca1acda268531da9b5a4c82ce01d0cdd682348",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/99ea3bbf448bd74efe0f3916018b81a8e57f91dd",
+                "reference": "99ea3bbf448bd74efe0f3916018b81a8e57f91dd",
                 "shasum": ""
             },
             "require": {
@@ -1010,7 +1010,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-07-12 21:45:55"
+            "time": "2015-07-14 12:16:20"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1320,12 +1320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "4b5864ed17471e558eacde1a0e1095113486349f"
+                "reference": "4487b4600525f04b5e2e8a46593f04f62a9c3446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/4b5864ed17471e558eacde1a0e1095113486349f",
-                "reference": "4b5864ed17471e558eacde1a0e1095113486349f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/4487b4600525f04b5e2e8a46593f04f62a9c3446",
+                "reference": "4487b4600525f04b5e2e8a46593f04f62a9c3446",
                 "shasum": ""
             },
             "require": {
@@ -1365,7 +1365,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-07-09 08:22:23"
+            "time": "2015-07-15 20:50:58"
         }
     ],
     "aliases": [],

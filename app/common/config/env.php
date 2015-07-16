@@ -1,8 +1,11 @@
 <?php
 
-Dotenv::load(YZ_BASE_DIR);
+$dotEnv = new \Dotenv\Dotenv(YZ_BASE_DIR);
+$dotEnv->load();
 
-Dotenv::required('YII_DEBUG', ['', '0', '1', 'true', true]);
-Dotenv::required('YII_ENV',['dev','prod','test']);
-Dotenv::required(['YII_TRACE_LEVEL']);
+// Place required env variables here
+$dotEnv->required([
+    'DB_DSN',
+]);
+
 
