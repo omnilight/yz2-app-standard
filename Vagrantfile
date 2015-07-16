@@ -26,5 +26,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         options['hosts']['frontend'],
         options['hosts']['backend']
     ]
-    config.vm.provision :shell, :path => "vm/run.sh", run: "always"
 end
