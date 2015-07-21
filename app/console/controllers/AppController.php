@@ -31,8 +31,6 @@ class AppController extends Controller
         $this->setWritable($this->writablePaths);
         $this->setExecutable($this->executablePaths);
         $this->setGeneratedKey($this->generateKeysPaths);
-        \Yii::$app->runAction('migrate/up');
-        \Yii::$app->runAction('rbac-migrate/up');
     }
 
     public function setWritable($paths)

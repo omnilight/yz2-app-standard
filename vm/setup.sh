@@ -47,7 +47,7 @@ mysql -u root -proot -e "create database if not exists yz2app";
 
 # Configuring nginx
 rm /etc/nginx/sites-available/default
-cp build/configs/nginx.conf /etc/nginx/sites-available/yz2app
+cp vm/configs/nginx.conf /etc/nginx/sites-available/yz2app
 sed -i 's/<frontend_host>/${frontend_host}/' /etc/nginx/sites-available/yz2app
 sed -i 's/<backend_host>/${backend_host}/' /etc/nginx/sites-available/yz2app
 
@@ -65,6 +65,6 @@ service php5-fpm restart
 cd /vagrant
 
 # Setup project
-php yii app/setup
+php yii app/setup --interactive=0
 php yii migrate --interactive=0
 php yii admin-users/create-default-admin
