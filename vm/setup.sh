@@ -6,7 +6,6 @@ backend_host=$(echo "$2")
 # Update package
 sudo apt-get update
 
-
 # Configuring locales
 update-locale LC_ALL="C"
 dpkg-reconfigure locales
@@ -46,15 +45,17 @@ cd /vagrant
 mysql -u root -proot -e "create database if not exists yz2app";
 
 # Configuring nginx
-rm /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
 cp vm/configs/nginx.conf /etc/nginx/sites-available/yz2app
-sed -i 's/<frontend_host>/${frontend_host}/' /etc/nginx/sites-available/yz2app
-sed -i 's/<backend_host>/${backend_host}/' /etc/nginx/sites-available/yz2app
+ln -s /etc/nginx/sites-available/yz2app /etc/nginx/sites-enabled/yz2app
+
+sed -i "s/<frontend_host>/$frontend_host/" /etc/nginx/sites-available/yz2app
+sed -i "s/<backend_host>/$backend_host/" /etc/nginx/sites-available/yz2app
 
 # Setup environment
 cp .env.dist .env
-sed -i 's/<frontend_host>/${frontend_host}/' .env
-sed -i 's/<backend_host>/${backend_host}/' .env
+sed -i "s/<frontend_host>/$frontend_host/" .env
+sed -i "s/<backend_host>/$backend_host/" .env
 
 # Restarting services
 service nginx restart
