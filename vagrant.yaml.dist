@@ -1,7 +1,7 @@
 vm:
   name: yz2app
   memory: 512
-  cpus: 1
+  ip: 192.168.7.6
 
 hosts:
   frontend: yz2app.192.168.7.6.xip.io

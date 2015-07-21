@@ -51,6 +51,11 @@ cp build/configs/nginx.conf /etc/nginx/sites-available/yz2app
 sed -i 's/<frontend_host>/${frontend_host}/' /etc/nginx/sites-available/yz2app
 sed -i 's/<backend_host>/${backend_host}/' /etc/nginx/sites-available/yz2app
 
+# Setup environment
+cp .env.dist .env
+sed -i 's/<frontend_host>/${frontend_host}/' .env
+sed -i 's/<backend_host>/${backend_host}/' .env
+
 # Restarting services
 service nginx restart
 service mysql restart
@@ -59,11 +64,7 @@ service php5-fpm restart
 # Configure application
 cd /vagrant
 
-# Setup environment
-cp .env.dist .env
-sed -i 's/<frontend_host>/${frontend_host}/' .env
-sed -i 's/<backend_host>/${backend_host}/' .env
-
+# Setup project
 php yii app/setup
 php yii migrate --interactive=0
 php yii admin-users/create-default-admin
