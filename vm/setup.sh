@@ -27,6 +27,8 @@ apt-get install -y \
 
 php5enmod mcrypt
 
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # Configure libraries
 if ! grep --quiet '^xdebug.remote_enable = on$' /etc/php5/mods-available/xdebug.ini; then
     (
