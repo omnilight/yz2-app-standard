@@ -29,6 +29,13 @@ Yii::setAlias('backendWebroot', '@backend/web');
 Yii::setAlias('frontendWeb', getenv('FRONTEND_WEB'));
 Yii::setAlias('backendWeb', getenv('BACKEND_WEB'));
 
+// App version
+if (file_exists(YZ_BASE_DIR.'/.version')) {
+    define('APP_VERSION', file_get_contents(YZ_BASE_DIR.'/.version'));
+} else {
+    define('APP_VERSION', 'latest');
+}
+
 
 /**
  * Dependency injections

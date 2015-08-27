@@ -1,5 +1,6 @@
 .idea
 .vagrant
 .env
+.version
 vagrant.yaml
 app/vendor/
