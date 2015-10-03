@@ -22,7 +22,8 @@
     "dmstr/yii2-migrate-command": "*",
     "vlucas/phpdotenv": "^2.0",
     "omnilight/yz2": "*",
-    "omnilight/yz2-admin": "*"
+    "omnilight/yz2-admin": "*",
+    "omnilight/yii2-event-listeners": "^1.0"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "2.*",

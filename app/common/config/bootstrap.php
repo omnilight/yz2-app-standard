@@ -49,4 +49,9 @@ if (file_exists(YZ_BASE_DIR.'/.version')) {
  * Event handlers
  */
 
+$listener = new \omnilight\events\Listener(
+    new \omnilight\events\PatternEventsProvider(),
+    new \omnilight\events\PrefixMethodFinder()
+);
+
 //\yii\base\Event::on(SomeClass::class, 'onEvent', [SomeListener::class, 'whenEvent']);
