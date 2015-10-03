@@ -1,0 +1,7 @@
+
+prod:
+  host: 127.0.0.1
+  user: user
+  password: user
+  stage: production
+  deploy_path: /home/webuser/project
