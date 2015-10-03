@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6ecf2d8e23181fa8a59be2ccf99bab1f",
+    "hash": "c23ad95ec5e01710ee8dd2d43b894e1a",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -124,23 +124,23 @@
         },
         {
             "name": "bower-asset/font-awesome",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
                 "shasum": ""
             },
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "./css/font-awesome.css",
-                    "./fonts/*"
+                    "less/font-awesome.less",
+                    "scss/font-awesome.scss"
                 ],
                 "bower-asset-ignore": [
                     "*/.*",
@@ -344,16 +344,16 @@
         },
         {
             "name": "bower-asset/select2",
-            "version": "3.5.2",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/select2/select2.git",
-                "reference": "6633cda9061d9fc65075dd140c63f9a6adbcbd72"
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/6633cda9061d9fc65075dd140c63f9a6adbcbd72",
-                "reference": "6633cda9061d9fc65075dd140c63f9a6adbcbd72",
+                "url": "https://api.github.com/repos/select2/select2/zipball/95a977f674b6938af55ec5f28b7772df93786c5c",
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c",
                 "shasum": ""
             },
             "require": {
@@ -596,12 +596,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yii2-bootstrap-datepicker.git",
-                "reference": "08a2c1bc471a191219195e712568de92ec917661"
+                "reference": "cc93ace7bb39254e736e2727e9a9a8b9f4719bd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yii2-bootstrap-datepicker/zipball/08a2c1bc471a191219195e712568de92ec917661",
-                "reference": "08a2c1bc471a191219195e712568de92ec917661",
+                "url": "https://api.github.com/repos/omnilight/yii2-bootstrap-datepicker/zipball/cc93ace7bb39254e736e2727e9a9a8b9f4719bd9",
+                "reference": "cc93ace7bb39254e736e2727e9a9a8b9f4719bd9",
                 "shasum": ""
             },
             "require": {
@@ -629,7 +629,7 @@
                 "picker",
                 "yii2"
             ],
-            "time": "2015-06-24 10:11:57"
+            "time": "2015-09-07 08:21:27"
         },
         {
             "name": "omnilight/yii2-bootstrap-daterangepicker",
@@ -679,6 +679,44 @@
             "time": "2015-07-01 17:08:30"
         },
         {
+            "name": "omnilight/yii2-event-listeners",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/omnilight/yii2-event-listeners.git",
+                "reference": "49202aaa09654c910a83683be92ee6f324553654"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/omnilight/yii2-event-listeners/zipball/49202aaa09654c910a83683be92ee6f324553654",
+                "reference": "49202aaa09654c910a83683be92ee6f324553654",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "omnilight\\events\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pavel Agalecky",
+                    "email": "pavel.agalecky@gmail.com"
+                }
+            ],
+            "description": "Event listeners support for Yii2 framework",
+            "keywords": [
+                "events",
+                "yii2"
+            ],
+            "time": "2015-09-09 10:04:09"
+        },
+        {
             "name": "omnilight/yii2-momentjs",
             "version": "dev-master",
             "source": {
@@ -720,16 +758,16 @@
         },
         {
             "name": "omnilight/yz2",
-            "version": "dev-master",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2.git",
-                "reference": "1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad"
+                "reference": "f9a34bef66b40e25a488a11ce425ec1b54615e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2/zipball/1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad",
-                "reference": "1f98b0123c75df0cc52d77e0fa24a1ae8ee06bad",
+                "url": "https://api.github.com/repos/omnilight/yz2/zipball/f9a34bef66b40e25a488a11ce425ec1b54615e4f",
+                "reference": "f9a34bef66b40e25a488a11ce425ec1b54615e4f",
                 "shasum": ""
             },
             "require": {
@@ -759,20 +797,20 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-07-13 11:20:35"
+            "time": "2015-09-22 12:37:37"
         },
         {
             "name": "omnilight/yz2-admin",
-            "version": "dev-master",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-admin.git",
-                "reference": "5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342"
+                "reference": "4ce55157f502a12a1325650992d901c175584e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342",
-                "reference": "5c8ba11cfbd24a33ce6d89fb0ceed5fd55481342",
+                "url": "https://api.github.com/repos/omnilight/yz2-admin/zipball/4ce55157f502a12a1325650992d901c175584e4e",
+                "reference": "4ce55157f502a12a1325650992d901c175584e4e",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +847,7 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-07-15 10:51:30"
+            "time": "2015-10-02 10:05:21"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -817,12 +855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "88eca3838807107c3b1c358a8e94f4f7c2d91fa0"
+                "reference": "4c619d36c7158138ef22b1066f836043629297d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/88eca3838807107c3b1c358a8e94f4f7c2d91fa0",
-                "reference": "88eca3838807107c3b1c358a8e94f4f7c2d91fa0",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/4c619d36c7158138ef22b1066f836043629297d7",
+                "reference": "4c619d36c7158138ef22b1066f836043629297d7",
                 "shasum": ""
             },
             "require": {
@@ -860,7 +898,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-07-14 10:17:41"
+            "time": "2015-08-18 21:06:42"
         },
         {
             "name": "vova07/yii2-select2-widget",
@@ -930,12 +968,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "99ea3bbf448bd74efe0f3916018b81a8e57f91dd"
+                "reference": "c76e0f9840c6ca014eda2f7acffc1c70a053eef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/99ea3bbf448bd74efe0f3916018b81a8e57f91dd",
-                "reference": "99ea3bbf448bd74efe0f3916018b81a8e57f91dd",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c76e0f9840c6ca014eda2f7acffc1c70a053eef9",
+                "reference": "c76e0f9840c6ca014eda2f7acffc1c70a053eef9",
                 "shasum": ""
             },
             "require": {
@@ -944,6 +982,7 @@
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": ">=2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
+                "ext-ctype": "*",
                 "ext-mbstring": "*",
                 "ezyang/htmlpurifier": "4.6.*",
                 "lib-pcre": "*",
@@ -1010,7 +1049,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-07-14 12:16:20"
+            "time": "2015-10-01 10:20:19"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1018,17 +1057,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "56d47544eb98ebdb542422abc598ef8097b3e9c5"
+                "reference": "49c2d45951dd2e98c6217aa071f655016c706846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/56d47544eb98ebdb542422abc598ef8097b3e9c5",
-                "reference": "56d47544eb98ebdb542422abc598ef8097b3e9c5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/49c2d45951dd2e98c6217aa071f655016c706846",
+                "reference": "49c2d45951dd2e98c6217aa071f655016c706846",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.x-dev"
+                "yiisoft/yii2": ">=2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1060,7 +1099,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-06-23 17:21:52"
+            "time": "2015-09-29 10:36:47"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -1068,12 +1107,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "6b2a2b3bb83d4b3dd791f76e64c48973ce01bac6"
+                "reference": "87cd1f2e0dd454a837607de612b1057840effe8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/6b2a2b3bb83d4b3dd791f76e64c48973ce01bac6",
-                "reference": "6b2a2b3bb83d4b3dd791f76e64c48973ce01bac6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/87cd1f2e0dd454a837607de612b1057840effe8b",
+                "reference": "87cd1f2e0dd454a837607de612b1057840effe8b",
                 "shasum": ""
             },
             "require": {
@@ -1107,7 +1146,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2015-06-11 19:55:58"
+            "time": "2015-09-25 10:48:24"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -1115,12 +1154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-jui.git",
-                "reference": "3d4f3d7d0e86af0e0b051a3660517f3041623ffa"
+                "reference": "022637087b4f8b0d321e697cc0a01b09cd2d7345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/3d4f3d7d0e86af0e0b051a3660517f3041623ffa",
-                "reference": "3d4f3d7d0e86af0e0b051a3660517f3041623ffa",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/022637087b4f8b0d321e697cc0a01b09cd2d7345",
+                "reference": "022637087b4f8b0d321e697cc0a01b09cd2d7345",
                 "shasum": ""
             },
             "require": {
@@ -1157,7 +1196,7 @@
                 "jQuery UI",
                 "yii2"
             ],
-            "time": "2015-05-30 10:39:17"
+            "time": "2015-09-29 10:49:11"
         }
     ],
     "packages-dev": [
@@ -1190,23 +1229,23 @@
         },
         {
             "name": "omnilight/yz2-gii",
-            "version": "1.0.0",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/omnilight/yz2-gii.git",
-                "reference": "8693c18f72dcfdbbfbce9fdb11565b08294daaf3"
+                "reference": "8818818278e94f19317f37a32a0b27722d121e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/8693c18f72dcfdbbfbce9fdb11565b08294daaf3",
-                "reference": "8693c18f72dcfdbbfbce9fdb11565b08294daaf3",
+                "url": "https://api.github.com/repos/omnilight/yz2-gii/zipball/8818818278e94f19317f37a32a0b27722d121e27",
+                "reference": "8818818278e94f19317f37a32a0b27722d121e27",
                 "shasum": ""
             },
             "require": {
                 "omnilight/yz2": "*",
                 "php": ">=5.4.0",
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "*"
+                "yiisoft/yii2": "2.0.*",
+                "yiisoft/yii2-bootstrap": "2.0.*"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1231,7 +1270,7 @@
                 "yii",
                 "yz"
             ],
-            "time": "2015-03-25 09:51:33"
+            "time": "2015-09-23 13:33:32"
         },
         {
             "name": "phpspec/php-diff",
@@ -1273,12 +1312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "1d2f8519c78c557b3d28f647a6bacfad1d6720f8"
+                "reference": "a8eba1bb9a7163df5120fb07c0c000e298a8bcf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/1d2f8519c78c557b3d28f647a6bacfad1d6720f8",
-                "reference": "1d2f8519c78c557b3d28f647a6bacfad1d6720f8",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/a8eba1bb9a7163df5120fb07c0c000e298a8bcf0",
+                "reference": "a8eba1bb9a7163df5120fb07c0c000e298a8bcf0",
                 "shasum": ""
             },
             "require": {
@@ -1312,7 +1351,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-06-24 10:53:39"
+            "time": "2015-09-29 10:36:38"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -1320,12 +1359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "4487b4600525f04b5e2e8a46593f04f62a9c3446"
+                "reference": "fbd134b1cbc06fa149cc546cc98b4e701ba08cb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/4487b4600525f04b5e2e8a46593f04f62a9c3446",
-                "reference": "4487b4600525f04b5e2e8a46593f04f62a9c3446",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/fbd134b1cbc06fa149cc546cc98b4e701ba08cb0",
+                "reference": "fbd134b1cbc06fa149cc546cc98b4e701ba08cb0",
                 "shasum": ""
             },
             "require": {
@@ -1365,7 +1404,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-07-15 20:50:58"
+            "time": "2015-09-29 10:49:23"
         }
     ],
     "aliases": [],
@@ -1374,7 +1413,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.5.0"
     },
     "platform-dev": []
 }

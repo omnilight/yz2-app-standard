@@ -16,19 +16,19 @@
   ],
   "type": "project",
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=5.5.0",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.0.*",
     "dmstr/yii2-migrate-command": "*",
     "vlucas/phpdotenv": "^2.0",
-    "omnilight/yz2": "*",
-    "omnilight/yz2-admin": "*",
+    "omnilight/yz2": "^1.0",
+    "omnilight/yz2-admin": "^1.0",
     "omnilight/yii2-event-listeners": "^1.0"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "2.*",
     "yiisoft/yii2-gii": "2.*",
-    "omnilight/yz2-gii": "*"
+    "omnilight/yz2-gii": "^1.0"
   },
   "autoload": {
     "psr-4": {
